@@ -1,0 +1,49 @@
+/* Sidebar.css */
+.sidebar-left {
+  position: fixed;      /* 固定位置 */
+  margin: 10vh 25px;
+  left: 0;              /* 固定在左侧 */
+  width: 250px;         /* 导航栏宽度 */
+  z-index: 1030;        /* 保证导航栏浮动在最前面 */
+  height: calc(100vh - 15vh ); /* 占满页面高度，减去上下边距 */
+  border-right: 1px solid #dee2e6;  /* 添加右侧边框 */
+  background-color: #38393c;        /* 背景色 */
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  overflow-y: auto;      /* 如果内容溢出则启用垂直滚动 */
+  h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+      margin-right: 10px;
+    }
+  }
+  hr{
+    margin: 10px 0;
+  }
+  .li{
+    margin-bottom: 10px;
+    margin-top: 15px;
+    a {
+      color: #FFF;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding-left: 5px;
+      font-weight: normal;
+    }
+    a:hover {
+      color: #e0dede;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-left {
+    width: 200px;       /* 在较小屏幕上调整宽度 */
+  }
+}

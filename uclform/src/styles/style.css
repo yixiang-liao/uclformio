@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+}
+
+/* Sidebar.css */
+.sidebar-left {
+  position: fixed; /* 固定位置 */
+  margin: 10vh 25px;
+  left: 0; /* 固定在左侧 */
+  width: 250px; /* 导航栏宽度 */
+  z-index: 1030; /* 保证导航栏浮动在最前面 */
+  height: 85vh; /* 占满页面高度，减去上下边距 */
+  border-right: 1px solid #dee2e6; /* 添加右侧边框 */
+  background-color: #38393c; /* 背景色 */
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+  overflow-y: auto; /* 如果内容溢出则启用垂直滚动 */
+}
+.sidebar-left h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-left h2 svg {
+  margin-right: 10px;
+}
+.sidebar-left hr {
+  margin: 10px 0;
+}
+.sidebar-left .li {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.sidebar-left .li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+.sidebar-left .li a:hover {
+  color: #e0dede;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-left {
+    width: 200px; /* 在较小屏幕上调整宽度 */
+  }
+}
+.header {
+  background-color: #253c53; /* 页首背景色 */
+  padding: 1vh; /* 内边距 */
+  border-bottom: 1px solid #dee2e6; /* 底部边框 */
+  text-align: left; /* 文字居中 */
+  position: fixed; /* 固定在顶部 */
+  width: calc(100% - 40px); /* 占满宽度，减去左右边距 */
+  top: 0; /* 固定在最上方 */
+  z-index: 1000; /* 在侧边栏上方 */
+  width: 100%;
+  color: #ffffff;
+}
+.header h1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+.header h1 svg {
+  margin-right: 10px;
+}
+
+.footer {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  text-align: right;
+  color: rgb(133, 133, 133);
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.formio-form .choices {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+}
+.formio-form .formio-component-textfield input {
+  width: auto;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.formio-form .formio-component-number input {
+  width: auto;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.formio-form .formio-component-phoneNumber input {
+  width: auto;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.formio-form .input-group {
+  display: flex;
+  align-items: center;
+}
+.formio-form .card {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px; /* 圓角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影 */
+  padding: 20px; /* 內邊距 */
+  background-color: #fff; /* 背景色 */
+  transition: box-shadow 0.3s ease; /* 陰影過渡效果 */
+  width: 70%;
+  margin-bottom: 1.5vh;
+  margin-top: 1.5vh;
+}
+.formio-form .card .card-header {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin-bottom: 1vh;
+  color: rgb(91, 91, 91);
+}
+.formio-form fieldset {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px; /* 圓角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影 */
+  padding: 5px; /* 內邊距 */
+  background-color: #fff; /* 背景色 */
+  transition: box-shadow 0.3s ease; /* 陰影過渡效果 */
+  width: 80%;
+  margin-bottom: 1.5vh;
+  margin-top: 1.5vh;
+}
+.formio-form fieldset legend {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: rgb(91, 91, 91);
+}
+.formio-form fieldset .fieldset-body .formio-component-textfield input, .formio-form fieldset .fieldset-body .formio-component-number input, .formio-form fieldset .fieldset-body .formio-component-phoneNumber input {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.formio-form fieldset .fieldset-body .formio-component-textfield .error, .formio-form fieldset .fieldset-body .formio-component-number .error, .formio-form fieldset .fieldset-body .formio-component-phoneNumber .error {
+  color: red;
+  font-size: 10px;
+}
+.formio-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1.5vh 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.334);
+  transition: background-color 0.3s ease;
+  letter-spacing: 2px;
+}
+.formio-form button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=style.css.map */

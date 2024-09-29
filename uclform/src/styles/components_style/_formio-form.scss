@@ -1,0 +1,117 @@
+// Formio 表单样式与 Bootstrap 结合
+
+.formio-form {
+  .choices{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1.5vh;
+  }
+  .formio-component-textfield{
+    input{
+      width: auto;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1.5vh;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+  .formio-component-number{
+    input{
+      width: auto;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1.5vh;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+  .formio-component-phoneNumber{
+    input{
+      width: auto;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1.5vh;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  }
+  .input-group{
+    display: flex;
+    align-items: center;
+  }
+  .card{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影 */
+    padding: 20px; /* 內邊距 */
+    background-color: #fff; /* 背景色 */
+    transition: box-shadow 0.3s ease; /* 陰影過渡效果 */
+    width: 70%;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    .card-header{
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: bolder;
+      margin-bottom: 1vh;
+      color: rgb(91, 91, 91);
+    }
+  }
+  fieldset{
+    border: 1px solid #e9e9e9;
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影 */
+    padding: 5px; /* 內邊距 */
+    background-color: #fff; /* 背景色 */
+    transition: box-shadow 0.3s ease; /* 陰影過渡效果 */
+    width: 80%;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    legend{
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: bolder;
+      color: rgb(91, 91, 91);
+    }
+    .fieldset-body{
+      .formio-component-textfield, .formio-component-number, .formio-component-phoneNumber{
+        input{
+          width: 100px;
+          height: 30px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 1.5vh;
+          margin-right: 10px;
+          font-size: 14px;
+        }
+        .error{
+          color: red;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 1.5vh 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.334);
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+    &:hover{
+      background-color: #0056b3;
+    }
+  }
+}
+  

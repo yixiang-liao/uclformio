@@ -1,0 +1,22 @@
+.header{
+    background-color: #253c53; /* 页首背景色 */
+    padding: 1vh;             /* 内边距 */
+    border-bottom: 1px solid #dee2e6; /* 底部边框 */
+    text-align: left;        /* 文字居中 */
+    position: fixed;           /* 固定在顶部 */
+    width: calc(100% - 40px); /* 占满宽度，减去左右边距 */
+    top: 0;                    /* 固定在最上方 */
+    z-index: 1000;            /* 在侧边栏上方 */
+    width: 100%;
+    color: #ffffff;
+    h1{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        letter-spacing: 3px;
+        font-weight: normal;
+        svg{
+          margin-right: 10px;
+        }
+    }
+}
