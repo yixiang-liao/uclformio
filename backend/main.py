@@ -1,7 +1,16 @@
 from fastapi import FastAPI
 from app.api.v1.endpoints import projectestimate2
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允許所有來源
+    allow_credentials=True,
+    allow_methods=["*"],  # 允許所有方法
+    allow_headers=["*"],  # 允許所有header
+)
 
 app.include_router(projectestimate2.router, prefix="/api/v1")
 
