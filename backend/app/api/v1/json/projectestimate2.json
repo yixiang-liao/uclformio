@@ -1886,7 +1886,7 @@
           "customConditional": "",
           "lockKey": true,
           "refreshOnBlur": false,
-          "calculateValue": "if (data.panel18Table3) { const projectId = data.panel18Table3; const url = `http://127.0.0.1:8000/api/v1/project/${projectId}`; fetch(url).then(response => response.json()).then(projectData => { if (projectData) { data.panel21 = projectId; if (typeof projectData.amount !== 'undefined') { const formattedAmount = new Intl.NumberFormat('zh-TW', { style: 'decimal', maximumFractionDigits: 2 }).format(projectData.amount); console.log('工程款:', projectData.amount); data.panel22 = formattedAmount; if (typeof this.redraw === 'function') { this.redraw(); } else if (typeof this.root.redraw === 'function') { this.root.redraw(); } } else { console.log('Project data does not contain amount'); } } }).catch(error => console.error('Error fetching project details:', error)); } return data.panel18Table3;"
+          "calculateValue": "if (data.panel18Table3) {const projectId = data.panel18Table3; const url = `http://127.0.0.1:8000/api/v1/project/${projectId}`; fetch(url) .then((response) => response.json()) .then((projectData) => { if (projectData) { data.panel21 = projectId;} }) } return data.panel18Table3;"
         },
         {
           "autofocus": false,
@@ -1929,14 +1929,12 @@
           "input": true,
           "tableView": true,
           "inputType": "text",
-          "inputMask": "",
           "label": "工程款",
           "key": "panel22",
           "placeholder": "",
-          "prefix": "",
-          "suffix": "",
           "multiple": false,
           "defaultValue": "",
+          "refreshOn": "panel21",
           "protected": false,
           "unique": false,
           "persistent": true,
@@ -1958,7 +1956,7 @@
           "tags": [],
           "properties": {},
           "disabled": true,
-          "calculateValue": "const amount = data.panel22 || ''; console.log('Calculating panel22 value:', amount); return amount;"
+          "calculateValue": "const projectId = data.panel21; if (projectId) { return fetch(`http://127.0.0.1:8000/api/v1/project/${projectId}`).then(response => response.json()).then(projectData => projectData.amount || 0).catch(error => { console.error('Error fetching project data:', error); return 0; }); } return 0;"
         }
       ],
       "type": "panel",
