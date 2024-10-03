@@ -1821,14 +1821,14 @@
           "data": {
             "values": [],
             "json": "",
-            "url": "http://163.18.26.212:8000/api/v1/owners?format=json",
+            "url": "http://127.0.0.1:8000/api/v1/owners?format=json",
             "resource": "",
             "custom": "",
-            "headers": [{ "value": "", "key": "" }],
-            "disableLimit": false
+            "headers": [{ "value": "", "key": "" }]
           },
           "dataSrc": "url",
           "valueProperty": "id",
+          "labelProperty": "name",
           "defaultValue": "",
           "refreshOn": "",
           "filter": "",
@@ -1861,11 +1861,11 @@
             "json": "",
             "url": "",
             "resource": "",
-            "custom": "const ownerId = data.panel18Table2; // 确保这里有正确的业主 ID\nconsole.log('Owner ID:', ownerId); // 调试输出\n\nif (ownerId) {\n    const url = `http://163.18.26.212:8000/api/v1/projects/${ownerId}`; // 使用 HTTPS\n\n    // 使用 Fetch API 获取项目数据\n    fetch(url)\n      .then(response => {\n          if (!response.ok) {\n              throw new Error('Network response was not ok');\n          }\n          return response.json(); // 将响应转换为 JSON\n      })\n      .then(data => {\n          // data 是一个数组，包含项目对象\n          const items = data.map(project => ({\n              label: project.name, // 显示的文本\n              value: project.id    // 选项的值\n          }));\n\n          // 清空当前值并更新下拉框选项\n          const component = instance.getComponent('panel18Table3'); \n          component.clearValue(); // 清空当前值\n          component.setItems(items); // 设置下拉框选项\n      })\n      .catch(error => {\n          console.error('Error fetching projects:', error);\n      });\n} else {\n    console.error('Owner ID is undefined');\n}\n",
+            "custom": "const ownerId = data.panel18Table2;\nif (ownerId) {\n  const url = `http://127.0.0.1:8000/api/v1/projects/${ownerId}`;\n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then(response => {\n        if (!response.ok) {\n          throw new Error('Network response was not ok');\n        }\n        return response.json();\n      })\n      .then(data => {\n        const items = data.map(project => ({\n          label: project.name,\n          value: project.id\n        }));\n        resolve(items);\n      })\n      .catch(error => {\n        console.error('Error fetching projects:', error);\n        reject(error);\n      });\n  });\n} else {\n  console.log('Owner ID is not selected yet');\n  return [];\n}",
             "headers": [{ "value": "", "key": "" }]
           },
           "dataSrc": "custom",
-          "valueProperty": "id",
+          "valueProperty": "value",
           "defaultValue": "",
           "refreshOn": "panel18Table2",
           "filter": "",
@@ -1884,7 +1884,9 @@
           "conditional": { "show": "", "when": null, "eq": "" },
           "properties": {},
           "customConditional": "",
-          "lockKey": true
+          "lockKey": true,
+          "refreshOnBlur": false,
+          "calculateValue": "if (data.panel18Table3) { const projectId = data.panel18Table3; const url = `http://127.0.0.1:8000/api/v1/project/${projectId}`; fetch(url).then(response => response.json()).then(projectData => { if (projectData) { data.panel21 = projectId; if (typeof projectData.amount !== 'undefined') { const formattedAmount = new Intl.NumberFormat('zh-TW', { style: 'decimal', maximumFractionDigits: 2 }).format(projectData.amount); console.log('工程款:', projectData.amount); data.panel22 = formattedAmount; if (typeof this.redraw === 'function') { this.redraw(); } else if (typeof this.root.redraw === 'function') { this.root.redraw(); } } else { console.log('Project data does not contain amount'); } } }).catch(error => console.error('Error fetching project details:', error)); } return data.panel18Table3;"
         },
         {
           "autofocus": false,
@@ -1919,38 +1921,44 @@
           "inputFormat": "plain",
           "tags": [],
           "properties": {},
-          "disabled": true
+          "disabled": true,
+          "calculateValue": "value = data.panel18Table3 || ''; return value;"
         },
         {
           "autofocus": false,
           "input": true,
           "tableView": true,
-          "inputType": "number",
+          "inputType": "text",
+          "inputMask": "",
           "label": "工程款",
           "key": "panel22",
           "placeholder": "",
           "prefix": "",
           "suffix": "",
+          "multiple": false,
           "defaultValue": "",
           "protected": false,
+          "unique": false,
           "persistent": true,
           "hidden": false,
           "clearOnHide": true,
+          "spellcheck": true,
           "validate": {
             "required": false,
-            "min": "",
-            "max": "",
-            "step": "any",
-            "integer": "",
-            "multiple": "",
-            "custom": ""
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
           },
-          "type": "number",
-          "labelPosition": "top",
-          "tags": [],
           "conditional": { "show": "", "when": null, "eq": "" },
+          "type": "textfield",
+          "labelPosition": "top",
+          "inputFormat": "plain",
+          "tags": [],
           "properties": {},
-          "disabled": true
+          "disabled": true,
+          "calculateValue": "const amount = data.panel22 || ''; console.log('Calculating panel22 value:', amount); return amount;"
         }
       ],
       "type": "panel",
