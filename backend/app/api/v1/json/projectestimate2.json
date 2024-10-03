@@ -1,0 +1,2073 @@
+{
+  "_id": "66e97edf33f60de0fb06bc24",
+  "title": "工程估價單2",
+  "name": "ProjectEstimate2",
+  "path": "projectestimate2",
+  "type": "form",
+  "display": "form",
+  "tags": ["common"],
+  "submissionAccess": [
+    { "type": "create_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
+    { "type": "read_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
+    { "type": "update_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
+    { "type": "delete_own", "roles": ["668bbd7ad9c33180cb045ffb"] }
+  ],
+  "owner": "668bbe4dd9c33180cb04603d",
+  "components": [
+    {
+      "clearOnHide": false,
+      "key": "panel",
+      "input": false,
+      "title": "人力預估 (正常工時)",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人工 / 天",
+                    "key": "panelTable2",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true,
+                    "isNew": false
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人數",
+                    "key": "panelTable3",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "人",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable4",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel2",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable2'] * data['panelTable3'] * data['panelTable4'];",
+          "lockKey": true
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel3",
+      "input": false,
+      "title": "人力預估 (加班工時)",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable5",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人工 / 天",
+                    "key": "panelTable6",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人數",
+                    "key": "panelTable7",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "人",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable8",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel4",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable6'] * data['panelTable7'] * data['panelTable8'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel5",
+      "input": false,
+      "title": "廠外施工 餐飲．津貼",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable9",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人工 / 天",
+                    "key": "panelTable10",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人數",
+                    "key": "panelTable11",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "人",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable12",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel6",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable10'] * data['panelTable11'] * data['panelTable12'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel7",
+      "input": false,
+      "title": "出差津貼：(工程人員)",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable13",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "成本 /天",
+                    "key": "panelTable14",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "車次",
+                    "key": "panelTable15",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable16",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel8",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable14'] * data['panelTable15'] * data['panelTable16'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel9",
+      "input": false,
+      "title": "出差津貼：(業務人員)",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable17",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "成本 /天",
+                    "key": "panelTable18",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "車次",
+                    "key": "panelTable19",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable20",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel10",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable18'] * data['panelTable19'] * data['panelTable20'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel11",
+      "input": false,
+      "title": "工(公)務車",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable21",
+          "numRows": 2,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "成本 /天",
+                    "key": "panelTable22",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($工資)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              { "components": [] }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "車次",
+                    "key": "panelTable23",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "天數",
+                    "key": "panelTable24",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "天",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel12",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "calculateValue": "value = data['panelTable22'] * data['panelTable23'] * data['panelTable24'];",
+          "lockKey": true
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel13",
+      "input": false,
+      "title": "出差交通費",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "panelTable25",
+          "numRows": 3,
+          "numCols": 4,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人數",
+                    "key": "panelTable26",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "高鐵",
+                    "key": "panelTable27",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($費用)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "趟數",
+                    "key": "panelTable28",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "小計",
+                    "key": "panelTable25Number",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "元",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "calculateValue": "value = data['panelTable26'] * data['panelTable27'] * data['panelTable28'];",
+                    "disabled": true,
+                    "customDefaultValue": "",
+                    "lockKey": true
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "人數",
+                    "key": "panelTable29",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "台鐵",
+                    "key": "panelTable30",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($費用)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "趟數",
+                    "key": "panelTable31",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "lockKey": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "小計",
+                    "key": "panelTable34",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "元",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {},
+                    "calculateValue": "value = data['panelTable29'] * data['panelTable30'] * data['panelTable31'];",
+                    "disabled": true,
+                    "customDefaultValue": "",
+                    "lockKey": true
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "停車費",
+                    "key": "panelTable32",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($費用)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "inputType": "number",
+                    "label": "計程車",
+                    "key": "panelTable33",
+                    "placeholder": "",
+                    "prefix": "",
+                    "suffix": "($費用)",
+                    "defaultValue": "",
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "min": "",
+                      "max": "",
+                      "step": "any",
+                      "integer": "",
+                      "multiple": "",
+                      "custom": ""
+                    },
+                    "type": "number",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": { "show": "", "when": null, "eq": "" },
+                    "properties": {}
+                  }
+                ]
+              },
+              { "components": [] },
+              { "components": [] }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單向費用",
+          "key": "panel14",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customDefaultValue": "",
+          "disabled": true,
+          "lockKey": true,
+          "calculateValue": "value = data['panelTable25Number'] + data['panelTable34'] + data['panelTable32'] + data['panelTable33'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel15",
+      "input": false,
+      "title": "材料",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tree": true,
+          "components": [
+            {
+              "clearOnHide": false,
+              "input": false,
+              "key": "panel16Table",
+              "numRows": 1,
+              "numCols": 4,
+              "rows": [
+                [
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "inputType": "text",
+                        "inputMask": "",
+                        "label": "品項",
+                        "key": "panel16Table2",
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "multiple": false,
+                        "defaultValue": "",
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "spellcheck": true,
+                        "validate": {
+                          "required": false,
+                          "minLength": "",
+                          "maxLength": "",
+                          "pattern": "",
+                          "custom": "",
+                          "customPrivate": false
+                        },
+                        "conditional": { "show": "", "when": null, "eq": "" },
+                        "type": "textfield",
+                        "labelPosition": "top",
+                        "inputFormat": "plain",
+                        "tags": [],
+                        "properties": {}
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "inputType": "number",
+                        "label": "單價",
+                        "key": "panel16Table3",
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "元",
+                        "defaultValue": "",
+                        "protected": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": false,
+                          "min": "",
+                          "max": "",
+                          "step": "any",
+                          "integer": "",
+                          "multiple": "",
+                          "custom": ""
+                        },
+                        "type": "number",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": { "show": "", "when": null, "eq": "" },
+                        "properties": {},
+                        "lockKey": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "inputType": "number",
+                        "label": "數量",
+                        "key": "panel16Table4",
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "defaultValue": "",
+                        "protected": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": false,
+                          "min": "",
+                          "max": "",
+                          "step": "any",
+                          "integer": "",
+                          "multiple": "",
+                          "custom": ""
+                        },
+                        "type": "number",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": { "show": "", "when": null, "eq": "" },
+                        "properties": {},
+                        "lockKey": true
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "inputType": "number",
+                        "label": "小計",
+                        "key": "panel16Table5",
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "defaultValue": "",
+                        "protected": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": false,
+                          "min": "",
+                          "max": "",
+                          "step": "any",
+                          "integer": "",
+                          "multiple": "",
+                          "custom": ""
+                        },
+                        "type": "number",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": { "show": "", "when": null, "eq": "" },
+                        "properties": {},
+                        "disabled": true,
+                        "calculateValue": "value = row.panel16Table3*row.panel16Table4;",
+                        "customDefaultValue": "",
+                        "lockKey": true
+                      }
+                    ]
+                  }
+                ]
+              ],
+              "header": [],
+              "caption": "",
+              "striped": false,
+              "bordered": false,
+              "hover": false,
+              "condensed": false,
+              "tableView": false,
+              "type": "table",
+              "inDataGrid": true,
+              "hideLabel": true,
+              "tags": [],
+              "conditional": { "show": "", "when": null, "eq": "" },
+              "properties": {}
+            }
+          ],
+          "tableView": true,
+          "label": "材料",
+          "key": "panel16",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "type": "datagrid",
+          "addAnotherPosition": "bottom",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "hideLabel": true,
+          "lockKey": true
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單項費用",
+          "key": "panel17",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "元",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "disabled": true,
+          "calculateValue": "value = data.panel16.reduce((sum, row) => sum + (row.panel16Table5 || 0), 0);"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel19",
+      "input": false,
+      "title": "報價金額",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "報價金額",
+          "key": "panel20",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "disabled": true,
+          "hideLabel": true,
+          "calculateValue": "value = data['panel2'] + data['panel4'] + data['panel6'] + data['panel8'] + data['panel10'] + data['panel12'] + data['panel14'] + data['panel17'];"
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "key": "panel18",
+      "input": false,
+      "title": "前案價參考",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "label": "業主",
+          "key": "panel18Table2",
+          "placeholder": "",
+          "data": {
+            "values": [],
+            "json": "",
+            "url": "http://163.18.26.212:8000/api/v1/owners?format=json",
+            "resource": "",
+            "custom": "",
+            "headers": [{ "value": "", "key": "" }],
+            "disableLimit": false
+          },
+          "dataSrc": "url",
+          "valueProperty": "id",
+          "defaultValue": "",
+          "refreshOn": "",
+          "filter": "",
+          "authenticate": false,
+          "template": "<span>{{ item.name }}</span>",
+          "multiple": false,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": { "required": false },
+          "type": "select",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "selectValues": "",
+          "lockKey": true
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "label": "工案名稱",
+          "key": "panel18Table3",
+          "placeholder": "",
+          "data": {
+            "values": [],
+            "json": "",
+            "url": "",
+            "resource": "",
+            "custom": "const ownerId = data.panel18Table2; // 确保这里有正确的业主 ID\nconsole.log('Owner ID:', ownerId); // 调试输出\n\nif (ownerId) {\n    const url = `http://163.18.26.212:8000/api/v1/projects/${ownerId}`; // 使用 HTTPS\n\n    // 使用 Fetch API 获取项目数据\n    fetch(url)\n      .then(response => {\n          if (!response.ok) {\n              throw new Error('Network response was not ok');\n          }\n          return response.json(); // 将响应转换为 JSON\n      })\n      .then(data => {\n          // data 是一个数组，包含项目对象\n          const items = data.map(project => ({\n              label: project.name, // 显示的文本\n              value: project.id    // 选项的值\n          }));\n\n          // 清空当前值并更新下拉框选项\n          const component = instance.getComponent('panel18Table3'); \n          component.clearValue(); // 清空当前值\n          component.setItems(items); // 设置下拉框选项\n      })\n      .catch(error => {\n          console.error('Error fetching projects:', error);\n      });\n} else {\n    console.error('Owner ID is undefined');\n}\n",
+            "headers": [{ "value": "", "key": "" }]
+          },
+          "dataSrc": "custom",
+          "valueProperty": "id",
+          "defaultValue": "",
+          "refreshOn": "panel18Table2",
+          "filter": "",
+          "authenticate": false,
+          "template": "<span>{{ item.label }}</span>",
+          "multiple": false,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": { "required": false },
+          "type": "select",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "customConditional": "",
+          "lockKey": true
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "工案編號",
+          "key": "panel21",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "spellcheck": true,
+          "validate": {
+            "required": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "type": "textfield",
+          "labelPosition": "top",
+          "inputFormat": "plain",
+          "tags": [],
+          "properties": {},
+          "disabled": true
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "工程款",
+          "key": "panel22",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": { "show": "", "when": null, "eq": "" },
+          "properties": {},
+          "disabled": true
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "hideLabel": false,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "clearOnHide": false,
+      "input": false,
+      "key": "table",
+      "numRows": 1,
+      "numCols": 2,
+      "rows": [
+        [
+          {
+            "components": [
+              {
+                "key": "tableContent",
+                "label": "Content",
+                "input": false,
+                "tag": "h4",
+                "attrs": [{ "value": "", "attr": "" }],
+                "className": "",
+                "content": "簽核主管",
+                "type": "htmlelement",
+                "hideLabel": true,
+                "tags": [],
+                "conditional": { "show": "", "when": null, "eq": "" },
+                "properties": {}
+              }
+            ]
+          },
+          {
+            "components": [
+              {
+                "autofocus": false,
+                "input": true,
+                "tableView": true,
+                "inputType": "text",
+                "inputMask": "",
+                "label": "簽核主管",
+                "key": "table2",
+                "placeholder": "",
+                "prefix": "",
+                "suffix": "",
+                "multiple": false,
+                "defaultValue": "",
+                "protected": false,
+                "unique": false,
+                "persistent": true,
+                "hidden": false,
+                "clearOnHide": true,
+                "spellcheck": true,
+                "validate": {
+                  "required": false,
+                  "minLength": "",
+                  "maxLength": "",
+                  "pattern": "",
+                  "custom": "",
+                  "customPrivate": false
+                },
+                "conditional": { "show": "", "when": null, "eq": "" },
+                "type": "textfield",
+                "labelPosition": "top",
+                "inputFormat": "plain",
+                "tags": [],
+                "properties": {},
+                "hideLabel": true
+              }
+            ]
+          }
+        ]
+      ],
+      "header": [],
+      "caption": "",
+      "striped": false,
+      "bordered": false,
+      "hover": false,
+      "condensed": false,
+      "tableView": false,
+      "type": "table",
+      "hideLabel": true,
+      "tags": [],
+      "conditional": { "show": "", "when": null, "eq": "" },
+      "properties": {}
+    },
+    {
+      "autofocus": false,
+      "input": true,
+      "label": "Submit",
+      "tableView": false,
+      "key": "submit",
+      "size": "md",
+      "leftIcon": "",
+      "rightIcon": "",
+      "block": false,
+      "action": "submit",
+      "disableOnInvalid": false,
+      "theme": "primary",
+      "type": "button"
+    }
+  ],
+  "pdfComponents": [],
+  "access": [
+    {
+      "type": "read_all",
+      "roles": [
+        "668bbd7ad9c33180cb045ff7",
+        "668bbd7ad9c33180cb045ffb",
+        "668bbd7ad9c33180cb045fff"
+      ]
+    }
+  ],
+  "created": "2024-09-17T13:06:39.223Z",
+  "modified": "2024-09-30T07:52:32.132Z",
+  "machineName": "ProjectEstimate2"
+}
