@@ -1,0 +1,114 @@
+{
+    "1": {
+    "value": "臥式雙吸泵對剖",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 10000 },
+      { "id": 102, "name": "廠商B", "price": 10500 }
+    ]
+  },
+  "2": {
+    "value": "臥式雙吸泵一體",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 11000 },
+      { "id": 104, "name": "廠商C", "price": 11500 }
+    ]
+  },
+  "3": {
+    "value": "臥式單吸泵渦卷",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 9000 },
+      { "id": 106, "name": "廠商D", "price": 9500 }
+    ]
+  },
+  "4": {
+    "value": "直立式泵",
+    "vendors": [
+      { "id": 104, "name": "廠商C", "price": 8500 },
+      { "id": 108, "name": "廠商E", "price": 8900 }
+    ]
+  },
+  "5": {
+    "value": "臥式單吸泵Inline",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 9200 },
+      { "id": 102, "name": "廠商B", "price": 9300 }
+    ]
+  },
+  "6": {
+    "value": "水環式真空泵",
+    "vendors": [
+      { "id": 106, "name": "廠商D", "price": 7000 },
+      { "id": 112, "name": "廠商F", "price": 7300 }
+    ]
+  },
+  "7": {
+    "value": "修補復型或防蝕",
+    "vendors": [
+      { "id": 108, "name": "廠商E", "price": 5000 },
+      { "id": 112, "name": "廠商F", "price": 5200 }
+    ]
+  },
+  "8": {
+    "value": "熱交換器",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 15000 },
+      { "id": 104, "name": "廠商C", "price": 15500 }
+    ]
+  },
+  "9": {
+    "value": "桶槽內襯抗化學保護",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 13000 },
+      { "id": 106, "name": "廠商D", "price": 13500 }
+    ]
+  },
+  "10": {
+    "value": "儲槽及管線修補含voc改善",
+    "vendors": [
+      { "id": 112, "name": "廠商F", "price": 14000 },
+      { "id": 120, "name": "廠商G", "price": 14500 }
+    ]
+  },
+  "11": {
+    "value": "mau風扇修護",
+    "vendors": [
+      { "id": 104, "name": "廠商C", "price": 6000 },
+      { "id": 106, "name": "廠商D", "price": 6200 }
+    ]
+  },
+  "12": {
+    "value": "冷卻水塔風扇",
+    "vendors": [
+      { "id": 108, "name": "廠商E", "price": 9000 },
+      { "id": 112, "name": "廠商F", "price": 9200 }
+    ]
+  },
+  "13": {
+    "value": "地板修補及防蝕",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 4000 },
+      { "id": 104, "name": "廠商C", "price": 4200 }
+    ]
+  },
+  "14": {
+    "value": "隔冷熱防結露塗裝",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 8000 },
+      { "id": 120, "name": "廠商G", "price": 8500 }
+    ]
+  },
+  "15": {
+    "value": "高抗磨機件或陶瓷貼附",
+    "vendors": [
+      { "id": 106, "name": "廠商D", "price": 11000 },
+      { "id": 108, "name": "廠商E", "price": 11500 }
+    ]
+  },
+  "16": {
+    "value": "pmx淨油機組裝",
+    "vendors": [
+      { "id": 104, "name": "廠商C", "price": 12000 },
+      { "id": 112, "name": "廠商F", "price": 12500 }
+    ]
+  }
+}

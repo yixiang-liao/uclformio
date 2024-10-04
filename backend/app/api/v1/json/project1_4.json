@@ -1,0 +1,86 @@
+{
+  "1": {
+    "value": "葉輪車修",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 6000 },
+      { "id": 102, "name": "廠商B", "price": 6200 }
+    ]
+  },
+  "2": {
+    "value": "軸套車修",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 5800 },
+      { "id": 101, "name": "廠商A", "price": 6000 }
+    ]
+  },
+  "3": {
+    "value": "軸牙車修",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 5500 },
+      { "id": 103, "name": "廠商C", "price": 5700 }
+    ]
+  },
+  "4": {
+    "value": "聯軸器整修",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 7000 },
+      { "id": 104, "name": "廠商D", "price": 7300 }
+    ]
+  },
+  "5": {
+    "value": "wearing陶瓷材修補車修",
+    "vendors": [
+      { "id": 105, "name": "廠商E", "price": 9000 },
+      { "id": 102, "name": "廠商B", "price": 9500 }
+    ]
+  },
+  "6": {
+    "value": "葉輪軸心車修",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 7500 },
+      { "id": 101, "name": "廠商A", "price": 7800 }
+    ]
+  },
+  "7": {
+    "value": "填料函修改",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 5000 },
+      { "id": 104, "name": "廠商D", "price": 5200 }
+    ]
+  },
+  "8": {
+    "value": "真空泵葉輪端面焊接車修",
+    "vendors": [
+      { "id": 105, "name": "廠商E", "price": 11000 },
+      { "id": 103, "name": "廠商C", "price": 11500 }
+    ]
+  },
+  "9": {
+    "value": "機械軸封整修",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 7200 },
+      { "id": 102, "name": "廠商B", "price": 7400 }
+    ]
+  },
+  "10": {
+    "value": "端板車修",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 6300 },
+      { "id": 104, "name": "廠商D", "price": 6500 }
+    ]
+  },
+  "11": {
+    "value": "軸心或配合部位噴焊研磨",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 8800 },
+      { "id": 101, "name": "廠商A", "price": 9000 }
+    ]
+  },
+  "12": {
+    "value": "背蓋車修加套環",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 7200 },
+      { "id": 104, "name": "廠商D", "price": 7400 }
+    ]
+  }
+}

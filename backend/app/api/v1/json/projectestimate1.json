@@ -5,12 +5,34 @@
   "path": "projectestimate1",
   "type": "form",
   "display": "form",
-  "tags": ["common"],
+  "tags": [
+    "common"
+  ],
   "submissionAccess": [
-    { "type": "create_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
-    { "type": "read_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
-    { "type": "update_own", "roles": ["668bbd7ad9c33180cb045ffb"] },
-    { "type": "delete_own", "roles": ["668bbd7ad9c33180cb045ffb"] }
+    {
+      "type": "create_own",
+      "roles": [
+        "668bbd7ad9c33180cb045ffb"
+      ]
+    },
+    {
+      "type": "read_own",
+      "roles": [
+        "668bbd7ad9c33180cb045ffb"
+      ]
+    },
+    {
+      "type": "update_own",
+      "roles": [
+        "668bbd7ad9c33180cb045ffb"
+      ]
+    },
+    {
+      "type": "delete_own",
+      "roles": [
+        "668bbd7ad9c33180cb045ffb"
+      ]
+    }
   ],
   "owner": "668bbe4dd9c33180cb04603d",
   "components": [
@@ -37,15 +59,27 @@
           "project": "",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         }
       ],
       "type": "fieldset",
       "hideLabel": true,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -64,8 +98,16 @@
               "label": "施工範疇",
               "key": "columns2",
               "values": [
-                { "value": "場內", "label": "場內", "shortcut": "" },
-                { "value": "場外", "label": "場外", "shortcut": "" }
+                {
+                  "value": "場內",
+                  "label": "場內",
+                  "shortcut": ""
+                },
+                {
+                  "value": "場外",
+                  "label": "場外",
+                  "shortcut": ""
+                }
               ],
               "defaultValue": "",
               "protected": false,
@@ -82,8 +124,14 @@
               "labelPosition": "top",
               "optionsLabelPosition": "right",
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             },
             {
               "autofocus": false,
@@ -119,8 +167,14 @@
               "labelPosition": "top",
               "optionsLabelPosition": "right",
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             }
           ],
           "width": 6,
@@ -145,13 +199,21 @@
               "name": "",
               "value": "",
               "clearOnHide": true,
-              "validate": { "required": false },
+              "validate": {
+                "required": false
+              },
               "type": "checkbox",
               "labelPosition": "right",
               "hideLabel": false,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             },
             {
               "autofocus": false,
@@ -168,13 +230,21 @@
               "name": "",
               "value": "",
               "clearOnHide": true,
-              "validate": { "required": false },
+              "validate": {
+                "required": false
+              },
               "type": "checkbox",
               "labelPosition": "right",
               "hideLabel": false,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             },
             {
               "autofocus": false,
@@ -191,13 +261,21 @@
               "name": "",
               "value": "",
               "clearOnHide": true,
-              "validate": { "required": false },
+              "validate": {
+                "required": false
+              },
               "type": "checkbox",
               "labelPosition": "right",
               "hideLabel": false,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             },
             {
               "autofocus": false,
@@ -214,13 +292,21 @@
               "name": "",
               "value": "",
               "clearOnHide": true,
-              "validate": { "required": false },
+              "validate": {
+                "required": false
+              },
               "type": "checkbox",
               "labelPosition": "right",
               "hideLabel": false,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             }
           ],
           "width": 6,
@@ -232,8 +318,14 @@
       "type": "columns",
       "hideLabel": true,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -256,8 +348,14 @@
                 "type": "htmlelement",
                 "hideLabel": true,
                 "tags": [],
-                "conditional": { "show": "", "when": null, "eq": "" },
-                "properties": {}
+                "conditional": {
+                  "show": "",
+                  "when": null,
+                  "eq": ""
+                },
+                "properties": {
+
+                }
               }
             ]
           },
@@ -290,12 +388,18 @@
                   "custom": "",
                   "customPrivate": false
                 },
-                "conditional": { "show": "", "when": null, "eq": "" },
+                "conditional": {
+                  "show": "",
+                  "when": null,
+                  "eq": ""
+                },
                 "type": "textfield",
                 "labelPosition": "top",
                 "inputFormat": "plain",
                 "tags": [],
-                "properties": {},
+                "properties": {
+
+                },
                 "hideLabel": true
               }
             ]
@@ -312,8 +416,14 @@
       "type": "table",
       "hideLabel": true,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -332,28 +442,70 @@
           "placeholder": "",
           "data": {
             "values": [
-              { "value": "臥式雙吸泵對剖", "label": "臥式雙吸泵(對剖)" },
-              { "value": "臥式雙吸泵一體", "label": "臥式雙吸泵(一體)" },
-              { "value": "臥式單吸泵渦卷", "label": "臥式單吸泵(渦卷)" },
-              { "value": "直立式泵", "label": "直立式泵" },
-              { "value": "臥式單吸泵Inline", "label": "臥式單吸泵(Inline)" },
-              { "value": "水環式真空泵", "label": "水環式真空泵" },
-              { "value": "修補復型或防蝕", "label": "修補復型或防蝕" },
-              { "value": "熱交換器", "label": "熱交換器" },
-              { "value": "桶槽內襯抗化學保護", "label": "桶槽內襯抗化學保護" },
+              {
+                "value": "臥式雙吸泵對剖",
+                "label": "臥式雙吸泵(對剖)"
+              },
+              {
+                "value": "臥式雙吸泵一體",
+                "label": "臥式雙吸泵(一體)"
+              },
+              {
+                "value": "臥式單吸泵渦卷",
+                "label": "臥式單吸泵(渦卷)"
+              },
+              {
+                "value": "直立式泵",
+                "label": "直立式泵"
+              },
+              {
+                "value": "臥式單吸泵Inline",
+                "label": "臥式單吸泵(Inline)"
+              },
+              {
+                "value": "水環式真空泵",
+                "label": "水環式真空泵"
+              },
+              {
+                "value": "修補復型或防蝕",
+                "label": "修補復型或防蝕"
+              },
+              {
+                "value": "熱交換器",
+                "label": "熱交換器"
+              },
+              {
+                "value": "桶槽內襯抗化學保護",
+                "label": "桶槽內襯抗化學保護"
+              },
               {
                 "value": "儲槽及管線修補含voc改善",
                 "label": "儲槽及管線修補(含VOC改善)"
               },
-              { "value": "mau風扇修護", "label": "MAU風扇修護" },
-              { "value": "冷卻水塔風扇", "label": "冷卻水塔風扇" },
-              { "value": "地板修補及防蝕", "label": "地板修補及防蝕" },
-              { "value": "隔冷熱防結露塗裝", "label": "隔(冷)熱防結露塗裝" },
+              {
+                "value": "mau風扇修護",
+                "label": "MAU風扇修護"
+              },
+              {
+                "value": "冷卻水塔風扇",
+                "label": "冷卻水塔風扇"
+              },
+              {
+                "value": "地板修補及防蝕",
+                "label": "地板修補及防蝕"
+              },
+              {
+                "value": "隔冷熱防結露塗裝",
+                "label": "隔(冷)熱防結露塗裝"
+              },
               {
                 "value": "高抗磨機件或陶瓷貼附",
                 "label": "高抗磨機件或陶瓷貼附"
               },
-              { "value": "pmx淨油機組裝", "label": "PMX淨油機組裝" }
+              {
+                "value": "pmx淨油機組裝",
+                "label": "PMX淨油機組裝"
+              }
             ],
             "json": "",
             "url": "",
@@ -366,19 +518,27 @@
           "refreshOn": "",
           "filter": "",
           "authenticate": false,
-          "template": "<span>{{ item.label }}</span>",
+          "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
           "multiple": false,
           "protected": false,
           "unique": false,
           "persistent": true,
           "hidden": false,
           "clearOnHide": true,
-          "validate": { "required": false },
+          "validate": {
+            "required": false
+          },
           "type": "select",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
           "hideLabel": true
         }
       ],
@@ -386,8 +546,14 @@
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -400,68 +566,12 @@
         {
           "autofocus": false,
           "input": true,
-          "tableView": true,
-          "label": "備品更新",
-          "key": "panel4",
-          "values": [
-            {
-              "value": "泵浦主件損壞更新翻製新品",
-              "label": "泵浦主件損壞更新(翻製新品)",
-              "shortcut": ""
-            },
-            { "value": "機械軸封", "label": "機械軸封", "shortcut": "" },
-            { "value": "心軸", "label": "心軸", "shortcut": "" },
-            {
-              "value": "耐磨環含木模",
-              "label": "耐磨環(含木模)",
-              "shortcut": ""
-            },
-            { "value": "軸接", "label": "軸接", "shortcut": "" },
-            {
-              "value": "水中軸承軸承座",
-              "label": "水中軸承軸承座",
-              "shortcut": ""
-            },
-            { "value": "軸承", "label": "軸承", "shortcut": "" },
-            { "value": "軸套", "label": "軸套", "shortcut": "" },
-            {
-              "value": "入出口膨脹接頭",
-              "label": "(入,出口) 膨脹接頭",
-              "shortcut": ""
-            },
-            { "value": "迷宮油封", "label": "迷宮油封", "shortcut": "" },
-            { "value": "wearing木模", "label": "WEARING木模", "shortcut": "" },
-            {
-              "value": "入口濾網不鏽鋼",
-              "label": "入口濾網(不鏽鋼)",
-              "shortcut": ""
-            }
-          ],
-          "inline": false,
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "validate": { "required": false },
-          "type": "selectboxes",
-          "labelPosition": "top",
-          "optionsLabelPosition": "right",
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
-          "customConditional": "",
-          "inDataGrid": true,
-          "lockKey": true,
-          "dataGridLabel": false
-        },
-        {
-          "autofocus": false,
-          "input": true,
           "tree": true,
           "components": [
             {
               "clearOnHide": false,
               "input": false,
-              "key": "panel2DataGridTable",
+              "key": "panel3Table",
               "numRows": 1,
               "numCols": 3,
               "rows": [
@@ -472,37 +582,54 @@
                         "autofocus": false,
                         "input": true,
                         "tableView": true,
-                        "inputType": "text",
-                        "inputMask": "",
                         "label": "品項",
-                        "key": "panel2DataGridTable2",
+                        "key": "panel3Table2",
                         "placeholder": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "multiple": false,
+                        "data": {
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
+                          "json": "",
+                          "url": "",
+                          "resource": "",
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
+                        },
+                        "dataSrc": "url",
+                        "valueProperty": "",
                         "defaultValue": "",
+                        "refreshOn": "",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                        "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "spellcheck": true,
                         "validate": {
-                          "required": false,
-                          "minLength": "",
-                          "maxLength": "",
-                          "pattern": "",
-                          "custom": "",
-                          "customPrivate": false
+                          "required": false
                         },
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "type": "textfield",
+                        "type": "select",
                         "labelPosition": "top",
-                        "inputFormat": "plain",
                         "tags": [],
-                        "properties": {},
-                        "calculateValue": "",
-                        "lockKey": true
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -513,34 +640,53 @@
                         "input": true,
                         "tableView": true,
                         "label": "廠商",
-                        "key": "panel2DataGridTable3",
+                        "key": "panel3Table3",
                         "placeholder": "",
                         "data": {
-                          "values": [{ "value": "", "label": "" }],
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": ""
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
                         },
-                        "dataSrc": "values",
+                        "dataSrc": "url",
                         "valueProperty": "",
                         "defaultValue": "",
                         "refreshOn": "",
                         "filter": "",
                         "authenticate": false,
-                        "template": "<span>{{ item.label }}</span>",
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
                         "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "validate": { "required": false },
+                        "validate": {
+                          "required": true
+                        },
                         "type": "select",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -552,7 +698,7 @@
                         "tableView": true,
                         "inputType": "number",
                         "label": "金額",
-                        "key": "panel2DataGridTable4",
+                        "key": "panel3Table4",
                         "placeholder": "",
                         "prefix": "",
                         "suffix": "",
@@ -573,8 +719,15 @@
                         "type": "number",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        },
+                        "disabled": true
                       }
                     ]
                   }
@@ -591,14 +744,19 @@
               "inDataGrid": true,
               "hideLabel": true,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {},
-              "customConditional": ""
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             }
           ],
           "tableView": true,
           "label": "項目清單",
-          "key": "panel2DataGrid",
+          "key": "panel3",
           "protected": false,
           "persistent": true,
           "hidden": false,
@@ -606,8 +764,14 @@
           "type": "datagrid",
           "addAnotherPosition": "bottom",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -636,15 +800,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
+          "disabled": true
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {},
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      },
       "hideLabel": false
     },
     {
@@ -655,65 +832,6 @@
       "theme": "default",
       "tableView": false,
       "components": [
-        {
-          "autofocus": false,
-          "input": true,
-          "tableView": true,
-          "label": "委外發包(含運輸及人工)",
-          "key": "panel3",
-          "values": [
-            { "value": "運輸", "label": "運輸", "shortcut": "" },
-            {
-              "value": "現場更換機械軸封",
-              "label": "現場更換機械軸封",
-              "shortcut": ""
-            },
-            { "value": "吊車", "label": "吊車", "shortcut": "" },
-            { "value": "焊接補強", "label": "焊接補強", "shortcut": "" },
-            { "value": "線上動平衡", "label": "線上動平衡", "shortcut": "" },
-            {
-              "value": "上下線及雷射對心",
-              "label": "上,下線及(雷射)對心",
-              "shortcut": ""
-            },
-            {
-              "value": "水刀表面處理",
-              "label": "水刀表面處理",
-              "shortcut": ""
-            },
-            { "value": "起重費", "label": "起重費", "shortcut": "" },
-            {
-              "value": "動平衡用含假心軸",
-              "label": "動平衡用(含假心軸)",
-              "shortcut": ""
-            },
-            {
-              "value": "委外施工含工安",
-              "label": "委外施工(含工安)",
-              "shortcut": ""
-            },
-            { "value": "搭架", "label": "搭架", "shortcut": "" },
-            {
-              "value": "陶瓷塊固定焊接",
-              "label": "陶瓷塊固定焊接",
-              "shortcut": ""
-            }
-          ],
-          "inline": false,
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "validate": { "required": false },
-          "type": "selectboxes",
-          "labelPosition": "top",
-          "optionsLabelPosition": "right",
-          "conditional": { "show": "", "when": "fieldset2", "eq": "" },
-          "properties": {},
-          "customConditional": "",
-          "inDataGrid": true,
-          "lockKey": true
-        },
         {
           "autofocus": false,
           "input": true,
@@ -733,35 +851,54 @@
                         "autofocus": false,
                         "input": true,
                         "tableView": true,
-                        "inputType": "text",
-                        "inputMask": "",
                         "label": "品項",
-                        "key": "panel21Table2",
+                        "key": "panel21TableSelect",
                         "placeholder": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "multiple": false,
+                        "data": {
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
+                          "json": "",
+                          "url": "",
+                          "resource": "",
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
+                        },
+                        "dataSrc": "url",
+                        "valueProperty": "",
                         "defaultValue": "",
+                        "refreshOn": "",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                        "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "spellcheck": true,
                         "validate": {
-                          "required": false,
-                          "minLength": "",
-                          "maxLength": "",
-                          "pattern": "",
-                          "custom": "",
-                          "customPrivate": false
+                          "required": false
                         },
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "type": "textfield",
+                        "type": "select",
                         "labelPosition": "top",
-                        "inputFormat": "plain",
                         "tags": [],
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -775,31 +912,50 @@
                         "key": "panel21Table3",
                         "placeholder": "",
                         "data": {
-                          "values": [{ "value": "", "label": "" }],
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": ""
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
                         },
-                        "dataSrc": "values",
+                        "dataSrc": "url",
                         "valueProperty": "",
                         "defaultValue": "",
                         "refreshOn": "",
                         "filter": "",
                         "authenticate": false,
-                        "template": "<span>{{ item.label }}</span>",
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
                         "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "validate": { "required": false },
+                        "validate": {
+                          "required": true
+                        },
                         "type": "select",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -832,8 +988,15 @@
                         "type": "number",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        },
+                        "disabled": true
                       }
                     ]
                   }
@@ -850,8 +1013,14 @@
               "inDataGrid": true,
               "hideLabel": true,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              }
             }
           ],
           "tableView": true,
@@ -864,8 +1033,14 @@
           "type": "datagrid",
           "addAnotherPosition": "bottom",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -894,15 +1069,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
+          "disabled": true
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {},
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      },
       "hideLabel": false
     },
     {
@@ -913,65 +1101,6 @@
       "theme": "default",
       "tableView": false,
       "components": [
-        {
-          "autofocus": false,
-          "input": true,
-          "tableView": true,
-          "label": "備品整修",
-          "key": "panel6",
-          "values": [
-            { "value": "葉輪車修", "label": "葉輪車修", "shortcut": "" },
-            { "value": "軸套車修", "label": "軸套車修", "shortcut": "" },
-            { "value": "軸牙車修", "label": "軸牙車修", "shortcut": "" },
-            { "value": "聯軸器整修", "label": "聯軸器整修", "shortcut": "" },
-            {
-              "value": "wearing陶瓷材修補車修",
-              "label": "WEARING陶瓷材修補車修",
-              "shortcut": ""
-            },
-            {
-              "value": "葉輪軸心車修",
-              "label": "葉輪軸心車修",
-              "shortcut": ""
-            },
-            { "value": "填料函修改", "label": "填料函修改", "shortcut": "" },
-            {
-              "value": "真空泵葉輪端面焊接車修",
-              "label": "真空泵葉輪端面焊接(車修)",
-              "shortcut": ""
-            },
-            {
-              "value": "機械軸封整修",
-              "label": "機械軸封整修",
-              "shortcut": ""
-            },
-            { "value": "端板車修", "label": "端板車修", "shortcut": "" },
-            {
-              "value": "軸心或配合部位噴焊研磨",
-              "label": "軸心或配合部位噴焊研磨",
-              "shortcut": ""
-            },
-            {
-              "value": "背蓋車修加套環",
-              "label": "背蓋車修加套環",
-              "shortcut": ""
-            }
-          ],
-          "inline": false,
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "validate": { "required": false },
-          "type": "selectboxes",
-          "labelPosition": "top",
-          "optionsLabelPosition": "right",
-          "conditional": { "show": "", "when": "fieldset2", "eq": "" },
-          "properties": {},
-          "customConditional": "",
-          "inDataGrid": true,
-          "lockKey": true
-        },
         {
           "autofocus": false,
           "input": true,
@@ -991,35 +1120,54 @@
                         "autofocus": false,
                         "input": true,
                         "tableView": true,
-                        "inputType": "text",
-                        "inputMask": "",
                         "label": "品項",
                         "key": "panel21Table6",
                         "placeholder": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "multiple": false,
+                        "data": {
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
+                          "json": "",
+                          "url": "",
+                          "resource": "",
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
+                        },
+                        "dataSrc": "url",
+                        "valueProperty": "",
                         "defaultValue": "",
+                        "refreshOn": "",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                        "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "spellcheck": true,
                         "validate": {
-                          "required": false,
-                          "minLength": "",
-                          "maxLength": "",
-                          "pattern": "",
-                          "custom": "",
-                          "customPrivate": false
+                          "required": false
                         },
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "type": "textfield",
+                        "type": "select",
                         "labelPosition": "top",
-                        "inputFormat": "plain",
                         "tags": [],
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -1033,31 +1181,50 @@
                         "key": "panel21Table7",
                         "placeholder": "",
                         "data": {
-                          "values": [{ "value": "", "label": "" }],
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": ""
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
                         },
-                        "dataSrc": "values",
+                        "dataSrc": "url",
                         "valueProperty": "",
                         "defaultValue": "",
                         "refreshOn": "",
                         "filter": "",
                         "authenticate": false,
-                        "template": "<span>{{ item.label }}</span>",
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
                         "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "validate": { "required": false },
+                        "validate": {
+                          "required": true
+                        },
                         "type": "select",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -1090,8 +1257,15 @@
                         "type": "number",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        },
+                        "disabled": true
                       }
                     ]
                   }
@@ -1108,8 +1282,15 @@
               "inDataGrid": true,
               "hideLabel": true,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              },
+              "isNew": false
             }
           ],
           "tableView": true,
@@ -1122,8 +1303,14 @@
           "type": "datagrid",
           "addAnotherPosition": "bottom",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -1152,15 +1339,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
+          "disabled": true
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {},
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      },
       "hideLabel": false
     },
     {
@@ -1171,61 +1371,6 @@
       "theme": "default",
       "tableView": false,
       "components": [
-        {
-          "autofocus": false,
-          "input": true,
-          "tableView": true,
-          "label": "零配件五金更新",
-          "key": "panel8",
-          "values": [
-            {
-              "value": "螺絲含螺帽華司",
-              "label": "螺絲(含螺帽,華司)",
-              "shortcut": ""
-            },
-            { "value": "定量油杯", "label": "定量油杯", "shortcut": "" },
-            {
-              "value": "格蘭迫緊含冷卻間隔環",
-              "label": "格蘭迫緊(含冷卻間隔環)",
-              "shortcut": ""
-            },
-            { "value": "ptfe墊片", "label": "PTFE墊片", "shortcut": "" },
-            {
-              "value": "泵浦外部管線總成含閥門",
-              "label": "泵浦外部管線總成(含閥門)",
-              "shortcut": ""
-            },
-            {
-              "value": "揚水管接合套",
-              "label": "揚水管接合套",
-              "shortcut": ""
-            },
-            { "value": "油位鏡", "label": "油位鏡", "shortcut": "" },
-            { "value": "油封", "label": "油封", "shortcut": "" },
-            {
-              "value": "心軸固定銷含組件定位銷",
-              "label": "心軸固定銷(含組件定位銷)",
-              "shortcut": ""
-            },
-            { "value": "c扣", "label": "C扣", "shortcut": "" },
-            { "value": "非石綿墊片", "label": "非石綿墊片", "shortcut": "" },
-            { "value": "潤滑油脂", "label": "潤滑油(脂)", "shortcut": "" }
-          ],
-          "inline": false,
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "validate": { "required": false },
-          "type": "selectboxes",
-          "labelPosition": "top",
-          "optionsLabelPosition": "right",
-          "conditional": { "show": "", "when": "fieldset2", "eq": "" },
-          "properties": {},
-          "customConditional": "",
-          "inDataGrid": true,
-          "lockKey": true
-        },
         {
           "autofocus": false,
           "input": true,
@@ -1245,35 +1390,54 @@
                         "autofocus": false,
                         "input": true,
                         "tableView": true,
-                        "inputType": "text",
-                        "inputMask": "",
                         "label": "品項",
                         "key": "panel21Table10",
                         "placeholder": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "multiple": false,
+                        "data": {
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
+                          "json": "",
+                          "url": "",
+                          "resource": "",
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
+                        },
+                        "dataSrc": "url",
+                        "valueProperty": "",
                         "defaultValue": "",
+                        "refreshOn": "",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                        "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "spellcheck": true,
                         "validate": {
-                          "required": false,
-                          "minLength": "",
-                          "maxLength": "",
-                          "pattern": "",
-                          "custom": "",
-                          "customPrivate": false
+                          "required": false
                         },
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "type": "textfield",
+                        "type": "select",
                         "labelPosition": "top",
-                        "inputFormat": "plain",
                         "tags": [],
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -1287,31 +1451,50 @@
                         "key": "panel21Table11",
                         "placeholder": "",
                         "data": {
-                          "values": [{ "value": "", "label": "" }],
+                          "values": [
+                            {
+                              "value": "",
+                              "label": ""
+                            }
+                          ],
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": ""
+                          "custom": "",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
                         },
-                        "dataSrc": "values",
+                        "dataSrc": "url",
                         "valueProperty": "",
                         "defaultValue": "",
                         "refreshOn": "",
                         "filter": "",
                         "authenticate": false,
-                        "template": "<span>{{ item.label }}</span>",
+                        "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
                         "multiple": false,
                         "protected": false,
                         "unique": false,
                         "persistent": true,
                         "hidden": false,
                         "clearOnHide": true,
-                        "validate": { "required": false },
+                        "validate": {
+                          "required": true
+                        },
                         "type": "select",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        }
                       }
                     ]
                   },
@@ -1344,8 +1527,15 @@
                         "type": "number",
                         "labelPosition": "top",
                         "tags": [],
-                        "conditional": { "show": "", "when": null, "eq": "" },
-                        "properties": {}
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {
+
+                        },
+                        "disabled": true
                       }
                     ]
                   }
@@ -1362,8 +1552,15 @@
               "inDataGrid": true,
               "hideLabel": true,
               "tags": [],
-              "conditional": { "show": "", "when": null, "eq": "" },
-              "properties": {}
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {
+
+              },
+              "isNew": false
             }
           ],
           "tableView": true,
@@ -1376,8 +1573,14 @@
           "type": "datagrid",
           "addAnotherPosition": "bottom",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -1406,15 +1609,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
+          "disabled": true
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {},
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      },
       "hideLabel": false
     },
     {
@@ -1452,8 +1668,14 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
           "hideLabel": true
         }
       ],
@@ -1461,8 +1683,14 @@
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -1499,9 +1727,15 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
-          "calculateValue": "value = data.datagrid.reduce((sum, row) => sum + (row.datagrid3 || 0), 0);",
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
+          "calculateValue": "value = data.datagrid.reduce((sum, row) =\u003E sum + (row.datagrid3 || 0), 0);",
           "disabled": true
         }
       ],
@@ -1509,8 +1743,14 @@
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -1547,8 +1787,14 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
           "hideLabel": true
         }
       ],
@@ -1556,8 +1802,14 @@
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -1582,13 +1834,24 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "［以下項目依 比例Ｘ費用小計 (A) 金額計]",
                     "type": "htmlelement",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -1600,18 +1863,31 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "公司制定成本比例由主管填寫",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
-              { "components": [] }
+              {
+                "components": []
+              }
             ],
             [
               {
@@ -1621,13 +1897,24 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "施工｜耗材",
                     "type": "htmlelement",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -1661,8 +1948,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "decimalLimit": 0,
                     "hideLabel": true
                   }
@@ -1697,8 +1990,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -1711,14 +2010,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "施工｜護具",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -1751,8 +2061,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -1786,8 +2102,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -1800,14 +2122,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "施工｜其它",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -1840,8 +2173,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -1875,8 +2214,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -1889,14 +2234,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "設備｜檢測儀器 維護保養．維修．折舊",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -1929,8 +2285,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -1964,8 +2326,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -1978,14 +2346,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "工機具｜維修及更新",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2018,8 +2397,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2053,8 +2438,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2067,14 +2458,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "車輛 ｜保險．油資．停車費．保養．維修．折舊．稅金",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2107,8 +2509,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2142,8 +2550,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2156,14 +2570,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "廠房租金．折舊",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2196,8 +2621,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2231,8 +2662,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2245,14 +2682,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "水．電．電話",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2285,8 +2733,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2320,8 +2774,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2334,14 +2794,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "外務獎金",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2374,8 +2845,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2409,8 +2886,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2423,14 +2906,25 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "其他雜項",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2463,8 +2957,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2498,8 +2998,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2514,8 +3020,14 @@
           "tableView": false,
           "type": "table",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
           "hideLabel": true
         }
       ],
@@ -2523,8 +3035,14 @@
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -2561,16 +3079,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {},
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          },
           "hideLabel": true
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {},
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      },
       "hideLabel": false
     },
     {
@@ -2608,8 +3138,14 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -2638,16 +3174,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -2684,8 +3232,14 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         },
         {
           "autofocus": false,
@@ -2714,16 +3268,28 @@
           "type": "number",
           "labelPosition": "top",
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "clearOnHide": false,
@@ -2748,28 +3314,50 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "業務獎金",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   },
                   {
                     "key": "panel18TableContent2",
                     "label": "Content",
                     "input": false,
                     "tag": "p",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "[  估價小計 (2) 乘以 % ]",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2802,8 +3390,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2837,8 +3431,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2851,28 +3451,50 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "外務獎金",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   },
                   {
                     "key": "panel18TableContent4",
                     "label": "Content",
                     "input": false,
                     "tag": "p",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "[  估價小計 (2) 乘以 % ]",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               },
@@ -2905,8 +3527,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -2940,8 +3568,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -2954,27 +3588,49 @@
                     "label": "Content",
                     "input": false,
                     "tag": "h4",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "業務費用",
                     "type": "htmlelement",
                     "hideLabel": true,
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   },
                   {
                     "key": "panel18Content",
                     "label": "Content",
                     "input": false,
                     "tag": "p",
-                    "attrs": [{ "value": "", "attr": "" }],
+                    "attrs": [
+                      {
+                        "value": "",
+                        "attr": ""
+                      }
+                    ],
                     "className": "",
                     "content": "[  估價小計 (2) 乘以 % ]",
                     "type": "htmlelement",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -3008,8 +3664,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {},
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    },
                     "hideLabel": true
                   }
                 ]
@@ -3043,8 +3705,14 @@
                     "type": "number",
                     "labelPosition": "top",
                     "tags": [],
-                    "conditional": { "show": "", "when": null, "eq": "" },
-                    "properties": {}
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {
+
+                    }
                   }
                 ]
               }
@@ -3060,16 +3728,28 @@
           "type": "table",
           "hideLabel": true,
           "tags": [],
-          "conditional": { "show": "", "when": null, "eq": "" },
-          "properties": {}
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+
+          }
         }
       ],
       "type": "panel",
       "breadcrumb": "default",
       "hideLabel": false,
       "tags": [],
-      "conditional": { "show": "", "when": null, "eq": "" },
-      "properties": {}
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+
+      }
     },
     {
       "autofocus": false,
@@ -3099,6 +3779,6 @@
     }
   ],
   "created": "2024-09-17T08:24:31.117Z",
-  "modified": "2024-10-02T05:44:28.050Z",
+  "modified": "2024-10-04T11:27:13.181Z",
   "machineName": "ProjectEstimate1"
 }

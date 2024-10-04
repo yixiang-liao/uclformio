@@ -1,0 +1,86 @@
+{
+  "1": {
+    "value": "運輸",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 3000 },
+      { "id": 102, "name": "廠商B", "price": 3500 }
+    ]
+  },
+  "2": {
+    "value": "現場更換機械軸封",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 8000 },
+      { "id": 103, "name": "廠商C", "price": 8500 }
+    ]
+  },
+  "3": {
+    "value": "吊車",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 5000 },
+      { "id": 103, "name": "廠商C", "price": 5500 }
+    ]
+  },
+  "4": {
+    "value": "焊接補強",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 4000 },
+      { "id": 104, "name": "廠商D", "price": 4500 }
+    ]
+  },
+  "5": {
+    "value": "線上動平衡",
+    "vendors": [
+      { "id": 105, "name": "廠商E", "price": 6000 },
+      { "id": 102, "name": "廠商B", "price": 6500 }
+    ]
+  },
+  "6": {
+    "value": "上下線及雷射對心",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 7000 },
+      { "id": 104, "name": "廠商D", "price": 7500 }
+    ]
+  },
+  "7": {
+    "value": "水刀表面處理",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 9000 },
+      { "id": 105, "name": "廠商E", "price": 9500 }
+    ]
+  },
+  "8": {
+    "value": "起重費",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 2000 },
+      { "id": 104, "name": "廠商D", "price": 2200 }
+    ]
+  },
+  "9": {
+    "value": "動平衡用含假心軸",
+    "vendors": [
+      { "id": 103, "name": "廠商C", "price": 12000 },
+      { "id": 101, "name": "廠商A", "price": 12500 }
+    ]
+  },
+  "10": {
+    "value": "委外施工含工安",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 10000 },
+      { "id": 105, "name": "廠商E", "price": 10500 }
+    ]
+  },
+  "11": {
+    "value": "搭架",
+    "vendors": [
+      { "id": 104, "name": "廠商D", "price": 3000 },
+      { "id": 101, "name": "廠商A", "price": 3200 }
+    ]
+  },
+  "12": {
+    "value": "陶瓷塊固定焊接",
+    "vendors": [
+      { "id": 105, "name": "廠商E", "price": 11000 },
+      { "id": 103, "name": "廠商C", "price": 11500 }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "1": {
+    "value": "泵浦主件損壞更新翻製新品",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 20000 },
+      { "id": 102, "name": "廠商B", "price": 21000 }
+    ]
+  },
+  "2": {
+    "value": "機械軸封",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 15000 },
+      { "id": 103, "name": "廠商C", "price": 16000 }
+    ]
+  },
+  "3": {
+    "value": "心軸",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 18000 },
+      { "id": 103, "name": "廠商C", "price": 19000 }
+    ]
+  },
+  "4": {
+    "value": "耐磨環含木模",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 22000 },
+      { "id": 102, "name": "廠商B", "price": 23000 }
+    ]
+  },
+  "5": {
+    "value": "軸接",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 17000 },
+      { "id": 103, "name": "廠商C", "price": 18000 }
+    ]
+  },
+  "6": {
+    "value": "水中軸承軸承座",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 19000 },
+      { "id": 103, "name": "廠商C", "price": 20000 }
+    ]
+  },
+  "7": {
+    "value": "軸承",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 25000 },
+      { "id": 103, "name": "廠商C", "price": 26000 }
+    ]
+  },
+  "8": {
+    "value": "軸套",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 12000 },
+      { "id": 102, "name": "廠商B", "price": 12500 }
+    ]
+  },
+  "9": {
+    "value": "入出口膨脹接頭",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 28000 },
+      { "id": 102, "name": "廠商B", "price": 29000 }
+    ]
+  },
+  "10": {
+    "value": "迷宮油封",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 17000 },
+      { "id": 103, "name": "廠商C", "price": 17500 }
+    ]
+  },
+  "11": {
+    "value": "wearing木模",
+    "vendors": [
+      { "id": 101, "name": "廠商A", "price": 22000 },
+      { "id": 103, "name": "廠商C", "price": 23000 }
+    ]
+  },
+  "12": {
+    "value": "入口濾網不鏽鋼",
+    "vendors": [
+      { "id": 102, "name": "廠商B", "price": 27000 },
+      { "id": 103, "name": "廠商C", "price": 27500 }
+    ]
+  }
+}

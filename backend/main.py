@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.api.v1.endpoints import projectestimate1
 from app.api.v1.endpoints import projectestimate2
 from app.api.v1.endpoints import jsonapi
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,6 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  # 允許所有header
 )
 
+app.include_router(projectestimate1.router, prefix="/api/v1")
 app.include_router(projectestimate2.router, prefix="/api/v1")
 app.include_router(jsonapi.router, prefix="/api/v1")
 
