@@ -1798,7 +1798,10 @@
             "eq": ""
           },
           "properties": {},
-          "hideLabel": true
+          "hideLabel": true,
+          "calculateValue": "value = (data.panel20 || 0) + (data.panel22 || 0) + (data.panel24 || 0) + (data.panel26 || 0) + (data.panel19 || 0) + (data.panel11 || 0);",
+          "disabled": true,
+          "refreshOn": ["panel20", "panel22", "panel24", "panel26", "panel19", "panel11"] 
         }
       ],
       "type": "panel",
@@ -1988,7 +1991,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table5 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2094,7 +2101,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table6 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2200,7 +2211,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table4Number / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2306,7 +2321,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table7 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2412,7 +2431,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table8 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2518,7 +2541,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table9 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2624,7 +2651,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table4Number2 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2730,7 +2761,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table4Number3 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2836,7 +2871,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table4Number4 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
@@ -2942,7 +2981,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "calculateValue": "value = ((data.table4Number5 / 100) * data.a || 0);",
+                    "disabled": true,
+                    "refreshOn": ["panel15"] ,
+                    "decimalLimit": 2
                   }
                 ]
               }
