@@ -44,12 +44,22 @@ def get_projects(owner_id: str):
         for p in projects
     ]
 
-# 根据工案编号获取金额
+# 獲取工案編號與金額
 @router.get("/project/{project_id}")
 def get_project_details(project_id: int):
     for owner_data in owners.values():
         for project in owner_data["projects"]:
             if project["project_id"] == project_id:
                 return {"project_id": project_id, "amount": project["amount"]}
+    
+    raise HTTPException(status_code=404, detail="Project not found")
+
+# 獲取金額
+@router.get("/amount/{project_id}")
+def get_amount(project_id: int):
+    for owner_data in owners.values():
+        for project in owner_data["projects"]:
+            if project["project_id"] == project_id:
+                return project["amount"]
     
     raise HTTPException(status_code=404, detail="Project not found")

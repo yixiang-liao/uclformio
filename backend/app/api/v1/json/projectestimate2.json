@@ -1956,7 +1956,7 @@
           "tags": [],
           "properties": {},
           "disabled": true,
-          "calculateValue": "const projectId = data.panel21; if (projectId) { return fetch(`http://127.0.0.1:8000/api/v1/project/${projectId}`).then(response => response.json()).then(projectData => parseInt(projectData.amount) || 0).catch(error => { console.error('Error fetching project data:', error); return 0; }); } return 0;"
+          "calculateValue": "value = (data.panel18Table3 ? (function() { const xhr = new XMLHttpRequest(); xhr.open('GET', `http://127.0.0.1:8000/api/v1/amount/${data.panel18Table3}`, false); xhr.send(); return parseInt(xhr.responseText) || 0; })().toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, ',') : 0);"
         }
       ],
       "type": "panel",
