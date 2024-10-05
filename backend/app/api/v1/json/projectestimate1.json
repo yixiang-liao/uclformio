@@ -1952,7 +1952,7 @@
                       "eq": ""
                     },
                     "properties": {},
-                    "decimalLimit": 0,
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2063,6 +2063,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2173,6 +2174,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2283,6 +2285,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2393,6 +2396,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2503,6 +2507,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2613,6 +2618,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2723,6 +2729,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2833,6 +2840,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -2943,6 +2951,7 @@
                       "eq": ""
                     },
                     "properties": {},
+                    "decimalLimit": 2,
                     "hideLabel": true
                   }
                 ]
@@ -3061,7 +3070,11 @@
             "eq": ""
           },
           "properties": {},
-          "hideLabel": true
+          "hideLabel": true,
+          "disabled": true,
+          "calculateValue": "value = (data.table11 || 0) + (data.table12 || 0) + (data.table13 || 0) + (data.table14 || 0) + (data.table15 || 0) + (data.table16 || 0) + (data.table17 || 0) + (data.table18 || 0) + (data.table19 || 0) + (data.table20 || 0);",
+          "refreshOn": ["panel15"] ,
+          "decimalLimit": 2
         }
       ],
       "type": "panel",
@@ -3115,7 +3128,10 @@
             "when": null,
             "eq": ""
           },
-          "properties": {}
+          "properties": {},
+          "calculateValue": "",
+          "disabled": false,
+          "decimalLimit": 2
         },
         {
           "autofocus": false,
@@ -3149,7 +3165,12 @@
             "when": null,
             "eq": ""
           },
-          "properties": {}
+          "properties": {},
+          "decimalLimit": 2,
+          "hideLabel": false,
+          "calculateValue": "value = (data.a2 || 0 )/((data.panel13Number || 0) / 100 ) || 0 ;",
+          "disabled": true,
+          "refreshOn": ["panel15"]
         }
       ],
       "type": "panel",
@@ -3203,7 +3224,8 @@
             "when": null,
             "eq": ""
           },
-          "properties": {}
+          "properties": {},
+          "decimalLimit": 2
         },
         {
           "autofocus": false,
@@ -3237,7 +3259,11 @@
             "when": null,
             "eq": ""
           },
-          "properties": {}
+          "properties": {},
+          "decimalLimit": 2,
+          "calculateValue": "value = (data.b2 || 0 )/((data.panel13Number2 || 0) / 100 ) || 0 ;",
+          "disabled": true,
+          "refreshOn": ["panel15"]
         }
       ],
       "type": "panel",
@@ -3390,7 +3416,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "decimalLimit": 0,
+                    "calculateValue": "value = (data.b3 || 0 )*((data.panel18Table2 || 0) / 100 ) || 0;",
+                    "disabled": true,
+                    "refreshOn": ["panel15"]
                   }
                 ]
               }
@@ -3442,7 +3472,8 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "decimalLimit": 2
                   }
                 ]
               },
@@ -3481,7 +3512,8 @@
                       "eq": ""
                     },
                     "properties": {},
-                    "hideLabel": true
+                    "hideLabel": true,
+                    "decimalLimit": 2
                   }
                 ]
               },
@@ -3519,7 +3551,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "decimalLimit": 0,
+                    "calculateValue": "value = (data.b3 || 0 )*((data.panel18Table3 || 0) / 100 ) || 0 ;",
+                    "disabled": true,
+                    "refreshOn": ["panel15"]
                   }
                 ]
               }
@@ -3548,7 +3584,8 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "decimalLimit": 2
                   },
                   {
                     "key": "panel18Content",
@@ -3571,7 +3608,8 @@
                       "eq": ""
                     },
                     "properties": {},
-                    "hideLabel": true
+                    "hideLabel": true,
+                    "decimalLimit": 2
                   }
                 ]
               },
@@ -3610,7 +3648,8 @@
                       "eq": ""
                     },
                     "properties": {},
-                    "hideLabel": true
+                    "hideLabel": true,
+                    "decimalLimit": 2
                   }
                 ]
               },
@@ -3648,7 +3687,11 @@
                       "when": null,
                       "eq": ""
                     },
-                    "properties": {}
+                    "properties": {},
+                    "decimalLimit": 0,
+                    "calculateValue": "value = (data.b3 || 0 )*((data.panel18Table4 || 0) / 100 ) || 0 ;",
+                    "disabled": true,
+                    "refreshOn": ["panel15"]
                   }
                 ]
               }
