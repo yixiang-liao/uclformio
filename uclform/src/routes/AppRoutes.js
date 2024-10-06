@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import FormPage1 from '../pages/FormPage1';
 import FormPage2 from '../pages/FormPage2';
+import FormPage3 from '../pages/FormPage3';
 import DynamicForm from '../components/DynamicForm';
 import DynamicForm2 from '../components/DynamicForm2';
 import FormioComponent from '../pages/FormioComponent';
@@ -13,6 +14,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/form1" element={<FormPage1 />} />
       <Route path="/form2" element={<FormPage2 />} />
+      <Route path="/form3" element={<FormPage3 />} />
       {/* <Route path="/form" element={<FormioComponent />} /> */}
       {/* <Route path="/FormioForm1" element={<FormioForm1 />} />
       <Route path="/FormioForm2" element={<FormioForm2 />} /> */}

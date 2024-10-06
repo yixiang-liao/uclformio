@@ -1,0 +1,1838 @@
+{
+    "_id": "670229cb33f60de0fb06fbe0",
+    "title": "委外發包 含運輸及人工",
+    "name": "entrust",
+    "path": "entrust",
+    "type": "form",
+    "display": "form",
+    "tags": [
+      "common"
+    ],
+    "submissionAccess": [
+      {
+        "type": "create_own",
+        "roles": [
+          "668bbd7ad9c33180cb045ffb"
+        ]
+      },
+      {
+        "type": "read_own",
+        "roles": [
+          "668bbd7ad9c33180cb045ffb"
+        ]
+      },
+      {
+        "type": "update_own",
+        "roles": [
+          "668bbd7ad9c33180cb045ffb"
+        ]
+      },
+      {
+        "type": "delete_own",
+        "roles": [
+          "668bbd7ad9c33180cb045ffb"
+        ]
+      }
+    ],
+    "owner": "668bbe4dd9c33180cb04603d",
+    "components": [
+      {
+        "clearOnHide": false,
+        "key": "panel",
+        "input": false,
+        "title": "委外發包(含運輸及人工)",
+        "theme": "default",
+        "tableView": false,
+        "components": [
+          {
+            "clearOnHide": false,
+            "input": false,
+            "key": "panelTable",
+            "numRows": 13,
+            "numCols": 3,
+            "rows": [
+              [
+                {
+                  "components": [
+                    {
+                      "key": "panelTableContent",
+                      "label": "Content",
+                      "input": false,
+                      "tag": "h4",
+                      "attrs": [
+                        {
+                          "value": "",
+                          "attr": ""
+                        }
+                      ],
+                      "className": "",
+                      "content": "品項",
+                      "type": "htmlelement",
+                      "hideLabel": true,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "key": "panelTableContent2",
+                      "label": "Content",
+                      "input": false,
+                      "tag": "h4",
+                      "attrs": [
+                        {
+                          "value": "",
+                          "attr": ""
+                        }
+                      ],
+                      "className": "",
+                      "content": "廠商",
+                      "type": "htmlelement",
+                      "hideLabel": true,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "key": "panelTableContent3",
+                      "label": "Content",
+                      "input": false,
+                      "tag": "h4",
+                      "attrs": [
+                        {
+                          "value": "",
+                          "attr": ""
+                        }
+                      ],
+                      "className": "",
+                      "content": "金額",
+                      "type": "htmlelement",
+                      "hideLabel": true,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "運輸",
+                      "dataGridLabel": false,
+                      "key": "panelTable2",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable16",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "http://127.0.0.1:8000/api/v1/project1_3_vendor/1",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable2\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/1\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n",
+                        "headers": [
+                          {
+                            "value": "",
+                            "key": ""
+                          }
+                        ]
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable2",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true,
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable17",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "calculateValue": "if (data[\"panelTable2\"] === true && data[\"panelTable16\"]) {\n  var vendorId = data.panelTable16;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/1/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n",
+                      "disabled": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "現場更換機械軸封",
+                      "dataGridLabel": false,
+                      "key": "panelTable3",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable14",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "http://127.0.0.1:8000/api/v1/project1_3_vendor/1",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable3\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/2\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n",
+                        "headers": [
+                          {
+                            "value": "",
+                            "key": ""
+                          }
+                        ]
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable3",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true,
+                      "clearOnRefresh": true,
+                      "isNew": false
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable15",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "calculateValue": "if (data[\"panelTable3\"] === true && data[\"panelTable14\"]) {\n  var vendorId = data.panelTable14;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/2/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n",
+                      "disabled": true,
+                      "isNew": false
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "吊車",
+                      "dataGridLabel": false,
+                      "key": "panelTable4",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable20",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "http://127.0.0.1:8000/api/v1/project1_3_vendor/1",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable4\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/3\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n",
+                        "headers": [
+                          {
+                            "value": "",
+                            "key": ""
+                          }
+                        ]
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable4",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "lockKey": true,
+                      "clearOnRefresh": true,
+                      "isNew": false
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable23",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "calculateValue": "if (data[\"panelTable4\"] === true && data[\"panelTable20\"]) {\n  var vendorId = data.panelTable20;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/3/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n",
+                      "disabled": true
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "焊接補強",
+                      "dataGridLabel": false,
+                      "key": "panelTable5",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable18",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable5\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/4\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable5",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable19",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable5\"] === true && data[\"panelTable18\"]) {\n  var vendorId = data.panelTable18;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/4/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "線上動平衡",
+                      "dataGridLabel": false,
+                      "key": "panelTable6",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable21",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable6\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/5\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable6",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable22",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable6\"] === true && data[\"panelTable21\"]) {\n  var vendorId = data.panelTable21;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/5/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "上下線及雷射對心",
+                      "dataGridLabel": false,
+                      "key": "panelTable7",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable24",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable7\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/6\";\n  \n  return new Promise((resolve, reject) =\u003E {\n    fetch(url)\n      .then((response) =\u003E {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) =\u003E {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) =\u003E ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) =\u003E {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable7",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable31",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable7\"] === true && data[\"panelTable24\"]) {\n  var vendorId = data.panelTable24;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/6/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable14 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "水刀表面處理",
+                      "dataGridLabel": false,
+                      "key": "panelTable8",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {}
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable25",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable8\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/7\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable8",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "<span>{{ item.label }}</span>",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {},
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable32",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {},
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable8\"] === true && data[\"panelTable25\"]) {\n  var vendorId = data.panelTable25;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/7/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "起重費",
+                      "dataGridLabel": false,
+                      "key": "panelTable9",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable26",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable9\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/8\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable9",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable33",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable9\"] === true && data[\"panelTable26\"]) {\n  var vendorId = data.panelTable26;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/8/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "動平衡用含假心軸",
+                      "dataGridLabel": false,
+                      "key": "panelTable10",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable27",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable10\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/9\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable10",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable34",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable10\"] === true && data[\"panelTable27\"]) {\n  var vendorId = data.panelTable27;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/9/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "委外施工含工安",
+                      "dataGridLabel": false,
+                      "key": "panelTable11",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable28",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable11\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/10\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable11",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable35",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable11\"] === true && data[\"panelTable28\"]) {\n  var vendorId = data.panelTable28;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/10/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "搭架",
+                      "dataGridLabel": false,
+                      "key": "panelTable12",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable29",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable12\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/11\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable12",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable36",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable12\"] === true && data[\"panelTable29\"]) {\n  var vendorId = data.panelTable29;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/11/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "inputType": "checkbox",
+                      "tableView": true,
+                      "label": "陶瓷塊固定焊接",
+                      "dataGridLabel": false,
+                      "key": "panelTable13",
+                      "defaultValue": false,
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "name": "",
+                      "value": "",
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "checkbox",
+                      "labelPosition": "right",
+                      "hideLabel": false,
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      }
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "label": "廠商",
+                      "key": "panelTable30",
+                      "placeholder": "",
+                      "data": {
+                        "values": [
+                          {
+                            "value": "",
+                            "label": ""
+                          }
+                        ],
+                        "json": "",
+                        "url": "",
+                        "resource": "",
+                        "custom": "if (data[\"panelTable13\"] === true) {\n  const url = \"http://127.0.0.1:8000/api/v1/project1_3_vendor/12\";\n  \n  return new Promise((resolve, reject) => {\n    fetch(url)\n      .then((response) => {\n        if (!response.ok) {\n          console.error(\"Network response was not ok\", response);\n          throw new Error(\"Network response was not ok\");\n        }\n        return response.json();\n      })\n      .then((data) => {\n        if (data.length === 0) {\n          console.warn(\"No vendor data found\");\n        }\n        const items = data.map((project) => ({\n          label: project.name,\n          value: project.id,\n        }));\n        resolve(items);\n      })\n      .catch((error) => {\n        console.error(\"Error fetching vendors:\", error);\n        reject(error);\n      });\n  });\n} else {\n  console.log(\"Owner ID is not selected yet\");\n  return [];\n}\n"
+                      },
+                      "dataSrc": "custom",
+                      "valueProperty": "value",
+                      "defaultValue": "",
+                      "refreshOn": "panelTable13",
+                      "filter": "",
+                      "authenticate": false,
+                      "template": "\u003Cspan\u003E{{ item.label }}\u003C/span\u003E",
+                      "multiple": false,
+                      "protected": false,
+                      "unique": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false
+                      },
+                      "type": "select",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "clearOnRefresh": true
+                    }
+                  ]
+                },
+                {
+                  "components": [
+                    {
+                      "autofocus": false,
+                      "input": true,
+                      "tableView": true,
+                      "inputType": "number",
+                      "label": "金額",
+                      "key": "panelTable37",
+                      "placeholder": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "defaultValue": "",
+                      "protected": false,
+                      "persistent": true,
+                      "hidden": false,
+                      "clearOnHide": true,
+                      "validate": {
+                        "required": false,
+                        "min": "",
+                        "max": "",
+                        "step": "any",
+                        "integer": "",
+                        "multiple": "",
+                        "custom": ""
+                      },
+                      "type": "number",
+                      "labelPosition": "top",
+                      "tags": [],
+                      "conditional": {
+                        "show": "",
+                        "when": null,
+                        "eq": ""
+                      },
+                      "properties": {
+  
+                      },
+                      "disabled": true,
+                      "calculateValue": "if (data[\"panelTable13\"] === true && data[\"panelTable30\"]) {\n  var vendorId = data.panelTable30;\n  console.log(vendorId);\n\n  if (vendorId) {\n    var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/12/${vendorId}`;\n    var xhr = new XMLHttpRequest();\n    xhr.open(\"GET\", url, false);\n    xhr.send();\n    value = parseInt(xhr.responseText) || 0;\n  } else {\n    value = 0;\n    console.error('panelTable25 is undefined or null');\n  }\n} else {\n  value = 0;\n}\n"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "header": [],
+            "caption": "",
+            "striped": false,
+            "bordered": false,
+            "hover": false,
+            "condensed": false,
+            "tableView": false,
+            "type": "table",
+            "hideLabel": true,
+            "tags": [],
+            "conditional": {
+              "show": "",
+              "when": null,
+              "eq": ""
+            },
+            "properties": {
+  
+            }
+          },
+          {
+            "autofocus": false,
+            "input": true,
+            "tableView": true,
+            "inputType": "number",
+            "label": "單項費用",
+            "key": "panel2",
+            "placeholder": "",
+            "prefix": "",
+            "suffix": "",
+            "defaultValue": "",
+            "protected": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {
+              "required": false,
+              "min": "",
+              "max": "",
+              "step": "any",
+              "integer": "",
+              "multiple": "",
+              "custom": ""
+            },
+            "type": "number",
+            "labelPosition": "top",
+            "tags": [],
+            "conditional": {
+              "show": "",
+              "when": null,
+              "eq": ""
+            },
+            "properties": {
+  
+            },
+            "disabled": true,
+          "calculateValue": "value = data['panelTable17'] + data['panelTable15'] + data['panelTable23'] + data['panelTable19'] + data['panelTable22'] + data['panelTable31'] + data['panelTable32'] + data['panelTable33'] + data['panelTable34'] + data['panelTable35'] + data['panelTable36'] + data['panelTable37'] ;"
+          }
+        ],
+        "type": "panel",
+        "breadcrumb": "default",
+        "hideLabel": false,
+        "tags": [],
+        "conditional": {
+          "show": "",
+          "when": null,
+          "eq": ""
+        },
+        "properties": {
+  
+        }
+      },
+      {
+        "autofocus": false,
+        "input": true,
+        "label": "Submit",
+        "tableView": false,
+        "key": "submit",
+        "size": "md",
+        "leftIcon": "",
+        "rightIcon": "",
+        "block": false,
+        "action": "submit",
+        "disableOnInvalid": false,
+        "theme": "primary",
+        "type": "button"
+      }
+    ],
+    "pdfComponents": [],
+    "access": [
+      {
+        "type": "read_all",
+        "roles": [
+          "668bbd7ad9c33180cb045ff7",
+          "668bbd7ad9c33180cb045ffb",
+          "668bbd7ad9c33180cb045fff"
+        ]
+      }
+    ],
+    "created": "2024-10-06T06:10:19.230Z",
+    "modified": "2024-10-06T08:20:00.398Z",
+    "machineName": "entrust"
+  }

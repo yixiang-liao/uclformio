@@ -519,6 +519,249 @@
     },
     {
       "clearOnHide": false,
+      "key": "panel",
+      "input": false,
+      "title": "委外發包(含運輸及人工)",
+      "theme": "default",
+      "tableView": false,
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tree": true,
+          "components": [
+            {
+              "clearOnHide": false,
+              "input": false,
+              "key": "panel21Table",
+              "numRows": 1,
+              "numCols": 3,
+              "rows": [
+                [
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "label": "品項",
+                        "key": "panel21TableSelect",
+                        "placeholder": "",
+                        "data": {
+                          "values": [],
+                          "json": "",
+                          "url": "http://127.0.0.1:8000/api/v1/project1_3_value?format=json",
+                          "resource": "",
+                          "custom": "",
+                          "headers": [{ "value": "", "key": "" }]
+                        },
+                        "dataSrc": "url",
+                        "valueProperty": "key",
+                        "labelProperty": "value",
+                        "refreshOn": "",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "<span>{{ item.value }}</span>",
+                        "multiple": false,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": false
+                        },
+                        "type": "select",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {}
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "label": "廠商",
+                        "key": "panel21Table3",
+                        "placeholder": "",
+                        "data": {
+                          "values": [],
+                          "json": "",
+                          "url": "",
+                          "resource": "",
+                          "custom": "const ownerId = row.panel21TableSelect; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
+                          "headers": [
+                            {
+                              "value": "",
+                              "key": ""
+                            }
+                          ]
+                        },
+                        "dataSrc": "custom",
+                        "valueProperty": "value",
+                        "defaultValue": "",
+                        "refreshOn": "panel21TableSelect",
+                        "filter": "",
+                        "authenticate": false,
+                        "template": "<span>{{ item.label }}</span>",
+                        "multiple": false,
+                        "protected": false,
+                        "unique": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": true
+                        },
+                        "type": "select",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {}
+                      }
+                    ]
+                  },
+                  {
+                    "components": [
+                      {
+                        "autofocus": false,
+                        "input": true,
+                        "tableView": true,
+                        "inputType": "number",
+                        "label": "金額",
+                        "key": "panel21Table4",
+                        "placeholder": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "defaultValue": "",
+                        "protected": false,
+                        "persistent": true,
+                        "hidden": false,
+                        "clearOnHide": true,
+                        "validate": {
+                          "required": false,
+                          "min": "",
+                          "max": "",
+                          "step": "any",
+                          "integer": "",
+                          "multiple": "",
+                          "custom": ""
+                        },
+                        "type": "number",
+                        "labelPosition": "top",
+                        "tags": [],
+                        "conditional": {
+                          "show": "",
+                          "when": null,
+                          "eq": ""
+                        },
+                        "properties": {},
+                        "disabled": true,
+                        "calculateValue": "if (row.panel21TableSelect && row.panel21Table3) { var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/` + row.panel21TableSelect + '/' + row.panel21Table3; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
+                        "refreshOn": ["panel21TableSelect", "panel21Table3"]
+                      }
+                    ]
+                  }
+                ]
+              ],
+              "header": [],
+              "caption": "",
+              "striped": false,
+              "bordered": false,
+              "hover": false,
+              "condensed": false,
+              "tableView": false,
+              "type": "table",
+              "inDataGrid": true,
+              "hideLabel": true,
+              "tags": [],
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {}
+            }
+          ],
+          "tableView": true,
+          "label": "項目清單",
+          "key": "panel21",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "type": "datagrid",
+          "addAnotherPosition": "bottom",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "number",
+          "label": "單項費用",
+          "key": "panel22",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false,
+            "min": "",
+            "max": "",
+            "step": "any",
+            "integer": "",
+            "multiple": "",
+            "custom": ""
+          },
+          "type": "number",
+          "labelPosition": "top",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {},
+          "calculateValue": "value = data.panel21.reduce((sum, row) => sum + (row.panel21Table4 || 0), 0);",
+          "disabled": true
+        }
+      ],
+      "type": "panel",
+      "breadcrumb": "default",
+      "tags": [],
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {},
+      "hideLabel": false
+    },
+    {
+      "clearOnHide": false,
       "key": "panel2",
       "input": false,
       "title": "備品更新",
@@ -558,7 +801,7 @@
                             "data": {
                               "values": [],
                               "json": "",
-                              "url": "http://127.0.0.1:8000/api/v1/project1_1_value?format=json",
+                              "url": "http://127.0.0.1:8000/api/v1/project1_2_value?format=json",
                               "resource": "",
                               "custom": "",
                               "headers": [{ "value": "", "key": "" }]
@@ -604,7 +847,7 @@
                               "json": "",
                               "url": "",
                               "resource": "",
-                              "custom": "const ownerId = row.panel3Table2; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_1_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
+                              "custom": "const ownerId = row.panel3Table2; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_2_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
                               "headers": [
                                 {
                                   "value": "",
@@ -675,7 +918,7 @@
                               "eq": ""
                             },
                             "disabled": true,
-                            "calculateValue": "if (row.panel3Table2 && row.panel3Table3) { var url = `http://127.0.0.1:8000/api/v1/project1_1_vendor/` + row.panel3Table2 + '/' + row.panel3Table3; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
+                            "calculateValue": "if (row.panel3Table2 && row.panel3Table3) { var url = `http://127.0.0.1:8000/api/v1/project1_2_vendor/` + row.panel3Table2 + '/' + row.panel3Table3; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
                             "refreshOn": ["panel3Table2", "panel3Table3"]
                           }
                         ]
@@ -777,249 +1020,6 @@
     },
     {
       "clearOnHide": false,
-      "key": "panel",
-      "input": false,
-      "title": "委外發包(含運輸及人工)",
-      "theme": "default",
-      "tableView": false,
-      "components": [
-        {
-          "autofocus": false,
-          "input": true,
-          "tree": true,
-          "components": [
-            {
-              "clearOnHide": false,
-              "input": false,
-              "key": "panel21Table",
-              "numRows": 1,
-              "numCols": 3,
-              "rows": [
-                [
-                  {
-                    "components": [
-                      {
-                        "autofocus": false,
-                        "input": true,
-                        "tableView": true,
-                        "label": "品項",
-                        "key": "panel21TableSelect",
-                        "placeholder": "",
-                        "data": {
-                          "values": [],
-                          "json": "",
-                          "url": "http://127.0.0.1:8000/api/v1/project1_2_value?format=json",
-                          "resource": "",
-                          "custom": "",
-                          "headers": [{ "value": "", "key": "" }]
-                        },
-                        "dataSrc": "url",
-                        "valueProperty": "key",
-                        "labelProperty": "value",
-                        "refreshOn": "",
-                        "filter": "",
-                        "authenticate": false,
-                        "template": "<span>{{ item.value }}</span>",
-                        "multiple": false,
-                        "protected": false,
-                        "unique": false,
-                        "persistent": true,
-                        "hidden": false,
-                        "clearOnHide": true,
-                        "validate": {
-                          "required": false
-                        },
-                        "type": "select",
-                        "labelPosition": "top",
-                        "tags": [],
-                        "conditional": {
-                          "show": "",
-                          "when": null,
-                          "eq": ""
-                        },
-                        "properties": {}
-                      }
-                    ]
-                  },
-                  {
-                    "components": [
-                      {
-                        "autofocus": false,
-                        "input": true,
-                        "tableView": true,
-                        "label": "廠商",
-                        "key": "panel21Table3",
-                        "placeholder": "",
-                        "data": {
-                          "values": [],
-                          "json": "",
-                          "url": "",
-                          "resource": "",
-                          "custom": "const ownerId = row.panel21TableSelect; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_2_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
-                          "headers": [
-                            {
-                              "value": "",
-                              "key": ""
-                            }
-                          ]
-                        },
-                        "dataSrc": "custom",
-                        "valueProperty": "value",
-                        "defaultValue": "",
-                        "refreshOn": "panel21TableSelect",
-                        "filter": "",
-                        "authenticate": false,
-                        "template": "<span>{{ item.label }}</span>",
-                        "multiple": false,
-                        "protected": false,
-                        "unique": false,
-                        "persistent": true,
-                        "hidden": false,
-                        "clearOnHide": true,
-                        "validate": {
-                          "required": true
-                        },
-                        "type": "select",
-                        "labelPosition": "top",
-                        "tags": [],
-                        "conditional": {
-                          "show": "",
-                          "when": null,
-                          "eq": ""
-                        },
-                        "properties": {}
-                      }
-                    ]
-                  },
-                  {
-                    "components": [
-                      {
-                        "autofocus": false,
-                        "input": true,
-                        "tableView": true,
-                        "inputType": "number",
-                        "label": "金額",
-                        "key": "panel21Table4",
-                        "placeholder": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "defaultValue": "",
-                        "protected": false,
-                        "persistent": true,
-                        "hidden": false,
-                        "clearOnHide": true,
-                        "validate": {
-                          "required": false,
-                          "min": "",
-                          "max": "",
-                          "step": "any",
-                          "integer": "",
-                          "multiple": "",
-                          "custom": ""
-                        },
-                        "type": "number",
-                        "labelPosition": "top",
-                        "tags": [],
-                        "conditional": {
-                          "show": "",
-                          "when": null,
-                          "eq": ""
-                        },
-                        "properties": {},
-                        "disabled": true,
-                        "calculateValue": "if (row.panel21TableSelect && row.panel21Table3) { var url = `http://127.0.0.1:8000/api/v1/project1_2_vendor/` + row.panel21TableSelect + '/' + row.panel21Table3; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
-                        "refreshOn": ["panel21TableSelect", "panel21Table3"]
-                      }
-                    ]
-                  }
-                ]
-              ],
-              "header": [],
-              "caption": "",
-              "striped": false,
-              "bordered": false,
-              "hover": false,
-              "condensed": false,
-              "tableView": false,
-              "type": "table",
-              "inDataGrid": true,
-              "hideLabel": true,
-              "tags": [],
-              "conditional": {
-                "show": "",
-                "when": null,
-                "eq": ""
-              },
-              "properties": {}
-            }
-          ],
-          "tableView": true,
-          "label": "項目清單",
-          "key": "panel21",
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "type": "datagrid",
-          "addAnotherPosition": "bottom",
-          "tags": [],
-          "conditional": {
-            "show": "",
-            "when": null,
-            "eq": ""
-          },
-          "properties": {}
-        },
-        {
-          "autofocus": false,
-          "input": true,
-          "tableView": true,
-          "inputType": "number",
-          "label": "單項費用",
-          "key": "panel22",
-          "placeholder": "",
-          "prefix": "",
-          "suffix": "",
-          "defaultValue": "",
-          "protected": false,
-          "persistent": true,
-          "hidden": false,
-          "clearOnHide": true,
-          "validate": {
-            "required": false,
-            "min": "",
-            "max": "",
-            "step": "any",
-            "integer": "",
-            "multiple": "",
-            "custom": ""
-          },
-          "type": "number",
-          "labelPosition": "top",
-          "tags": [],
-          "conditional": {
-            "show": "",
-            "when": null,
-            "eq": ""
-          },
-          "properties": {},
-          "calculateValue": "value = data.panel21.reduce((sum, row) => sum + (row.panel21Table4 || 0), 0);",
-          "disabled": true
-        }
-      ],
-      "type": "panel",
-      "breadcrumb": "default",
-      "tags": [],
-      "conditional": {
-        "show": "",
-        "when": null,
-        "eq": ""
-      },
-      "properties": {},
-      "hideLabel": false
-    },
-    {
-      "clearOnHide": false,
       "key": "panel5",
       "input": false,
       "title": "備品整修",
@@ -1051,7 +1051,7 @@
                         "data": {
                           "values": [],
                           "json": "",
-                          "url": "http://127.0.0.1:8000/api/v1/project1_3_value?format=json",
+                          "url": "http://127.0.0.1:8000/api/v1/project1_4_value?format=json",
                           "resource": "",
                           "custom": "",
                           "headers": [{ "value": "", "key": "" }]
@@ -1098,7 +1098,7 @@
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": "const ownerId = row.panel21Table6; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
+                          "custom": "const ownerId = row.panel21Table6; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_4_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
                           "headers": [
                             {
                               "value": "",
@@ -1170,7 +1170,7 @@
                         },
                         "properties": {},
                         "disabled": true,
-                        "calculateValue": "if (row.panel21Table6 && row.panel21Table7) { var url = `http://127.0.0.1:8000/api/v1/project1_3_vendor/` + row.panel21Table6 + '/' + row.panel21Table7; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
+                        "calculateValue": "if (row.panel21Table6 && row.panel21Table7) { var url = `http://127.0.0.1:8000/api/v1/project1_4_vendor/` + row.panel21Table6 + '/' + row.panel21Table7; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
                         "refreshOn": ["panel21Table6", "panel21Table7"]
                       }
                     ]
@@ -1295,7 +1295,7 @@
                         "data": {
                           "values": [],
                           "json": "",
-                          "url": "http://127.0.0.1:8000/api/v1/project1_4_value?format=json",
+                          "url": "http://127.0.0.1:8000/api/v1/project1_1_value?format=json",
                           "resource": "",
                           "custom": "",
                           "headers": [{ "value": "", "key": "" }]
@@ -1341,7 +1341,7 @@
                           "json": "",
                           "url": "",
                           "resource": "",
-                          "custom": "const ownerId = row.panel21Table10; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_4_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
+                          "custom": "const ownerId = row.panel21Table10; if (ownerId) { const url = `http://127.0.0.1:8000/api/v1/project1_1_vendor/${ownerId}`; return new Promise((resolve, reject) => { fetch(url) .then((response) => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then((data) => { const items = data.map((project) => ({ label: project.name, value: project.id })); resolve(items); }) .catch((error) => { console.error('Error fetching projects:', error); reject(error); }); }); } else { console.log('Owner ID is not selected yet'); return []; }",
                           "headers": [
                             {
                               "value": "",
@@ -1413,7 +1413,7 @@
                         },
                         "properties": {},
                         "disabled": true,
-                        "calculateValue": "if (row.panel21Table10 && row.panel21Table11) { var url = `http://127.0.0.1:8000/api/v1/project1_4_vendor/` + row.panel21Table10 + '/' + row.panel21Table11; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
+                        "calculateValue": "if (row.panel21Table10 && row.panel21Table11) { var url = `http://127.0.0.1:8000/api/v1/project1_1_vendor/` + row.panel21Table10 + '/' + row.panel21Table11; var xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.send(); value = parseInt(xhr.responseText) || 0; } else { value = 0; };",
                         "refreshOn": ["panel21Table10", "panel21Table11"]
                       }
                     ]
