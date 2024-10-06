@@ -2,6 +2,12 @@
     margin: 0;
 }
 
+body{
+    iframe{
+        display: none;
+    }
+}
+
 @import './components_style/sidebar-left.scss';
 @import './components_style/header';
 @import './components_style/footer';

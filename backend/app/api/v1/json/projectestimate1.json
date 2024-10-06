@@ -553,12 +553,13 @@
                           "url": "http://127.0.0.1:8000/api/v1/project1_3_value?format=json",
                           "resource": "",
                           "custom": "",
+                          "onChange": "if (event) { row.panel21Table3 = ''; }",
                           "headers": [{ "value": "", "key": "" }]
                         },
                         "dataSrc": "url",
                         "valueProperty": "key",
                         "labelProperty": "value",
-                        "refreshOn": "",
+                        "refreshOn": "panel21Table3",
                         "filter": "",
                         "authenticate": false,
                         "template": "<span>{{ item.value }}</span>",
@@ -629,7 +630,8 @@
                           "when": null,
                           "eq": ""
                         },
-                        "properties": {}
+                        "properties": {},
+                        "clearOnRefresh": true
                       }
                     ]
                   },
@@ -804,12 +806,13 @@
                               "url": "http://127.0.0.1:8000/api/v1/project1_2_value?format=json",
                               "resource": "",
                               "custom": "",
+                              "onChange": "if (event) { row.panel3Table3 = ''; }",
                               "headers": [{ "value": "", "key": "" }]
                             },
                             "dataSrc": "url",
                             "valueProperty": "key",
                             "labelProperty": "value",
-                            "refreshOn": "panel3Table2",
+                            "refreshOn": "panel3Table3",
                             "filter": "",
                             "authenticate": false,
                             "template": "<span>{{ item.value }}</span>",
@@ -881,7 +884,8 @@
                             },
                             "properties": {
     
-                            }
+                            },
+                            "clearOnRefresh": true
                           }
                         ]
                       },
@@ -1054,12 +1058,13 @@
                           "url": "http://127.0.0.1:8000/api/v1/project1_4_value?format=json",
                           "resource": "",
                           "custom": "",
+                          "onChange": "if (event) { row.panel21Table7 = ''; }",
                           "headers": [{ "value": "", "key": "" }]
                         },
                         "dataSrc": "url",
                         "valueProperty": "key",
                         "labelProperty": "value",
-                        "refreshOn": "",
+                        "refreshOn": "panel21Table7",
                         "filter": "",
                         "authenticate": false,
                         "template": "<span>{{ item.value }}</span>",
@@ -1130,7 +1135,8 @@
                           "when": null,
                           "eq": ""
                         },
-                        "properties": {}
+                        "properties": {},
+                        "clearOnRefresh": true
                       }
                     ]
                   },
@@ -1298,12 +1304,13 @@
                           "url": "http://127.0.0.1:8000/api/v1/project1_1_value?format=json",
                           "resource": "",
                           "custom": "",
+                          "onChange": "if (event) { row.panel21Table11 = ''; }",
                           "headers": [{ "value": "", "key": "" }]
                         },
                         "dataSrc": "url",
                         "valueProperty": "key",
                         "labelProperty": "value",
-                        "refreshOn": "",
+                        "refreshOn": "panel21Table10",
                         "filter": "",
                         "authenticate": false,
                         "template": "<span>{{ item.value }}</span>",
@@ -1373,7 +1380,8 @@
                           "when": null,
                           "eq": ""
                         },
-                        "properties": {}
+                        "properties": {},
+                        "clearOnRefresh": true
                       }
                     ]
                   },
